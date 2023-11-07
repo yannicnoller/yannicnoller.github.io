@@ -1,105 +1,497 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://alshedivat.github.io/al-folio/feed.xml" rel="self" type="application/atom+xml"/><link href="https://alshedivat.github.io/al-folio/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-11-07T14:11:01+00:00</updated><id>https://alshedivat.github.io/al-folio/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with bibliography</title><link href="https://alshedivat.github.io/al-folio/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/post-bibliography</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. If you would like something more academic, check the <a href="/al-folio/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://alshedivat.github.io/al-folio/blog/2023/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/jupyter-notebook</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
-{% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
-{% if notebook_exists == "true" %}
-    {% jupyter_notebook jupyter_path %}
-{% else %}
-    <span class="nt">&lt;p&gt;</span>Sorry, the notebook you are looking for does not exist.<span class="nt">&lt;/p&gt;</span>
-{% endif %}
-{:/nomarkdown}
-</code></pre></div></div> <p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p> <p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p> <div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;"> <div class="jupyter-notebook-iframe-container"> <iframe src="/al-folio/assets/jupyter/blog.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe> </div> </div> <p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="jupyter"/><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://alshedivat.github.io/al-folio/blog/2023/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes"/><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/custom-blockquotes</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p> <p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p> <div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
-<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
-    <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://yannicnoller.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://yannicnoller.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-11-07T14:15:56+00:00</updated><id>https://yannicnoller.github.io/feed.xml</id><title type="html">blank</title><subtitle>&lt;i&gt;Assistant Professor&lt;/i&gt; at SUTD </subtitle><entry><title type="html">Symbolic PathFinder Setup</title><link href="https://yannicnoller.github.io/blog/2022/spf/" rel="alternate" type="text/html" title="Symbolic PathFinder Setup"/><published>2022-06-01T00:00:00+00:00</published><updated>2022-06-01T00:00:00+00:00</updated><id>https://yannicnoller.github.io/blog/2022/spf</id><content type="html" xml:base="https://yannicnoller.github.io/blog/2022/spf/"><![CDATA[<p><em>This post includes some valuable hints for <strong>building SPF with Ant</strong> and some helpful advice for using it.</em></p> <p><br/></p> <h3 id="1-prepare-the-siteproperties-file">1. Prepare the <code>site.properties</code> file</h3> <hr/> <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /Users/yannic/.jpf
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
+yannic@Yannics-MacBook-Pro .jpf % <span class="nb">cat </span>site.properties
 
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+<span class="c"># SPF</span>
+jpf-core <span class="o">=</span> /Users/yannic/repositories/jpf-core
+jpf-symbc <span class="o">=</span> /Users/yannic/repositories/jpf-symbc
+extensions <span class="o">=</span> <span class="k">${</span><span class="nv">jpf</span><span class="p">-core</span><span class="k">}</span>,<span class="k">${</span><span class="nv">jpf</span><span class="p">-symbc</span><span class="k">}</span></code></pre></figure> <p><br/> <br/></p> <h3 id="2-make-sure-to-use-java-v8">2. Make sure to use Java v8</h3> <hr/> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">yannic@Yannics-MacBook-Pro jpf-core % java <span class="nt">-version</span>
+openjdk version <span class="s2">"1.8.0_312"</span>
+OpenJDK Runtime Environment <span class="o">(</span>Temurin<span class="o">)(</span>build 1.8.0_312-b07<span class="o">)</span>
+OpenJDK 64-Bit Server VM <span class="o">(</span>Temurin<span class="o">)(</span>build 25.312-b07, mixed mode<span class="o">)</span></code></pre></figure> <p><br/> <br/></p> <h3 id="3-prepare-the-jpf-core-ie-jpf">3. Prepare the jpf-core (i.e., JPF)</h3> <hr/> <p><strong>3.1 Get the Java-8 branch for jpf-core</strong><br/> → <a href="https://github.com/javapathfinder/jpf-core/tree/java-8">GitHub - javapathfinder/jpf-core at java-8</a></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">git clone git@github.com:javapathfinder/jpf-core.git
+git checkout <span class="nt">-b</span> java-8 origin/java-8
 
-  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
+git branch
+<span class="k">*</span> java-8
+  master</code></pre></figure> <p><br/> <strong>3.2 Build jpf-core</strong><br/></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">ant build</code></pre></figure> <details> <summary>Build Log</summary> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">    yannic@Yannics-MacBook-Pro jpf-core % ant build
+    Buildfile: /Users/yannic/repositories/jpf-core/build.xml
+    
+    <span class="nt">-cond-clean</span>:
+    
+    clean:
+    
+    <span class="nt">-init</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build
+    
+    <span class="nt">-compile-annotations</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/annotations
+        <span class="o">[</span>javac] Compiling 10 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/annotations
+    
+    <span class="nt">-compile-main</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/main
+        <span class="o">[</span>javac] Compiling 708 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/main
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/MJIEnv.java:20: warning: InstructionConstants is internal proprietary API and may be removed <span class="k">in </span>a future release
+        <span class="o">[</span>javac] import com.sun.org.apache.bcel.internal.generic.InstructionConstants<span class="p">;</span>
+        <span class="o">[</span>javac]                                                ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/HashedAllocationContext.java:21: warning: SharedSecrets is internal proprietary API and may be removed <span class="k">in </span>a future release
+        <span class="o">[</span>javac] import sun.misc.SharedSecrets<span class="p">;</span>
+        <span class="o">[</span>javac]                ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/HashedAllocationContext.java:22: warning: JavaLangAccess is internal proprietary API and may be removed <span class="k">in </span>a future release
+        <span class="o">[</span>javac] import sun.misc.JavaLangAccess<span class="p">;</span>
+        <span class="o">[</span>javac]                ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/HashedAllocationContext.java:85: warning: JavaLangAccess is internal proprietary API and may be removed <span class="k">in </span>a future release
+        <span class="o">[</span>javac]    static final JavaLangAccess JLA <span class="o">=</span> SharedSecrets.getJavaLangAccess<span class="o">()</span><span class="p">;</span>
+        <span class="o">[</span>javac]                 ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/HashedAllocationContext.java:85: warning: SharedSecrets is internal proprietary API and may be removed <span class="k">in </span>a future release
+        <span class="o">[</span>javac]    static final JavaLangAccess JLA <span class="o">=</span> SharedSecrets.getJavaLangAccess<span class="o">()</span><span class="p">;</span>
+        <span class="o">[</span>javac]                                      ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/main/gov/nasa/jpf/vm/choice/PermutationCG.java:35: warning: <span class="o">[</span>deprecation] ChoiceGeneratorBase<span class="o">()</span> <span class="k">in </span>ChoiceGeneratorBase has been deprecated
+        <span class="o">[</span>javac]   public PermutationCG <span class="o">(</span>PermutationGenerator pg<span class="o">){</span>
+        <span class="o">[</span>javac]                                                 ^
+        <span class="o">[</span>javac] Note: Some input files use unchecked or unsafe operations.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:unchecked <span class="k">for </span>details.
+        <span class="o">[</span>javac] 6 warnings
+    
+    <span class="nt">-compile-peers</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/peers
+        <span class="o">[</span>javac] Compiling 79 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/peers
+        <span class="o">[</span>javac] Note: /Users/yannic/repositories/jpf-core/src/peers/gov/nasa/jpf/vm/JPF_java_util_Random.java uses internal proprietary API that may be removed <span class="k">in </span>a future release.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:sunapi <span class="k">for </span>details.
+    
+    <span class="nt">-compile-classes</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/classes
+        <span class="o">[</span>javac] Compiling 84 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/classes
+        <span class="o">[</span>javac] Note: Some input files use internal proprietary API that may be removed <span class="k">in </span>a future release.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:sunapi <span class="k">for </span>details.
+        <span class="o">[</span>javac] Creating empty /Users/yannic/repositories/jpf-core/build/classes/java/nio/package-info.class
+    
+    <span class="nt">-compile-tests</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/tests
+        <span class="o">[</span>javac] Compiling 191 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/tests
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/TypeNameTest.java:31: warning: <span class="o">[</span>overrides] Class B overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac] class B <span class="o">{</span>
+        <span class="o">[</span>javac] ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/CGCreatorFactoryTest.java:44: warning: <span class="o">[</span>overrides] Class CGCreatorFactoryTest.B overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class B <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:344: warning: <span class="o">[</span>overrides] Class JSONTest.Bool overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class Bool <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:388: warning: <span class="o">[</span>overrides] Class JSONTest.ByteShortIntLong overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class ByteShortIntLong <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:447: warning: <span class="o">[</span>overrides] Class JSONTest.O overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class O <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:479: warning: <span class="o">[</span>overrides] Class JSONTest.ArrI overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class ArrI <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:520: warning: <span class="o">[</span>overrides] Class JSONTest.BoxedInteger overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class BoxedInteger <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/mc/data/JSONTest.java:549: warning: <span class="o">[</span>overrides] Class JSONTest.BoxedDouble overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   class BoxedDouble <span class="o">{</span>
+        <span class="o">[</span>javac]   ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/vm/reflection/ReflectionTest.java:34: warning: <span class="o">[</span>deprecation] getCallerClass<span class="o">(</span>int<span class="o">)</span> <span class="k">in </span>Reflection has been deprecated
+        <span class="o">[</span>javac]       Class&lt;?&gt; callerCls <span class="o">=</span> sun.reflect.Reflection.getCallerClass<span class="o">(</span>0<span class="o">)</span><span class="p">;</span> // that would be getCallerClass<span class="o">()</span>
+        <span class="o">[</span>javac]                                                  ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/vm/reflection/ReflectionTest.java:38: warning: <span class="o">[</span>deprecation] getCallerClass<span class="o">(</span>int<span class="o">)</span> <span class="k">in </span>Reflection has been deprecated
+        <span class="o">[</span>javac]       callerCls <span class="o">=</span> sun.reflect.Reflection.getCallerClass<span class="o">(</span>1<span class="o">)</span><span class="p">;</span> // foo<span class="o">()</span>
+        <span class="o">[</span>javac]                                         ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/vm/reflection/ReflectionTest.java:42: warning: <span class="o">[</span>deprecation] getCallerClass<span class="o">(</span>int<span class="o">)</span> <span class="k">in </span>Reflection has been deprecated
+        <span class="o">[</span>javac]       callerCls <span class="o">=</span> sun.reflect.Reflection.getCallerClass<span class="o">(</span>2<span class="o">)</span><span class="p">;</span> // bar<span class="o">()</span>
+        <span class="o">[</span>javac]                                         ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/vm/reflection/ReflectionTest.java:46: warning: <span class="o">[</span>deprecation] getCallerClass<span class="o">(</span>int<span class="o">)</span> <span class="k">in </span>Reflection has been deprecated
+        <span class="o">[</span>javac]       callerCls <span class="o">=</span> sun.reflect.Reflection.getCallerClass<span class="o">(</span>3<span class="o">)</span><span class="p">;</span> // callIt<span class="o">()</span>
+        <span class="o">[</span>javac]                                         ^
+        <span class="o">[</span>javac] /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/util/SortedArrayObjectSetTest.java:30: warning: <span class="o">[</span>overrides] Class X overrides equals, but neither it nor any superclass overrides hashCode method
+        <span class="o">[</span>javac]   static class X implements Comparable&lt;X&gt; <span class="o">{</span>
+        <span class="o">[</span>javac]          ^
+        <span class="o">[</span>javac] Note: Some input files use unchecked or unsafe operations.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:unchecked <span class="k">for </span>details.
+        <span class="o">[</span>javac] Note: /Users/yannic/repositories/jpf-core/src/tests/gov/nasa/jpf/test/vm/reflection/ReflectionTest.java uses internal proprietary API that may be removed <span class="k">in </span>a future release.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:sunapi <span class="k">for </span>details.
+        <span class="o">[</span>javac] 13 warnings
+    
+    <span class="nt">-compile-examples</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-core/build/examples
+        <span class="o">[</span>javac] Compiling 11 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-core/build/examples
+    
+    compile:
+         <span class="o">[</span>copy] Copying 1 file to /Users/yannic/repositories/jpf-core/build/main/gov/nasa/jpf
+    
+    <span class="nt">-version</span>:
+    
+    build:
+         <span class="o">[</span>copy] Warning: Could not find file /Users/yannic/repositories/jpf-core/.version to copy.
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/jpf-classes.jar
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/jpf.jar
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/jpf-annotations.jar
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/classloader_specific_tests.jar
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/RunJPF.jar
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-core/build/RunTest.jar
+    
+    BUILD SUCCESSFUL
+    Total <span class="nb">time</span>: 8 seconds</code></pre></figure> </details> <details> <summary>Potential Errors</summary> <ul> <li><b>gov.nasa.jpf.vm.MJIEnv</b></li> <ul> <li>→ comment/remove the:</li> <figure class="highlight"><pre><code class="language-java" data-lang="java">		<span class="kn">import</span> <span class="nn">com.sun.org.apache.bcel.internal.generic.InstructionConstants</span><span class="o">;</span>
+		</code></pre></figure> </ul> </ul> </details> <p><br/> <br/></p> <h3 id="4-prepare-jpf-symbc-ie-spf">4. Prepare jpf-symbc (i.e., SPF)</h3> <hr/> <p><strong>4.1 Get the latest SPF version</strong><br/> → <a href="https://github.com/SymbolicPathFinder/jpf-symbc">GitHub - SymbolicPathFinder/jpf-symbc: Symbolic PathFinder</a></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">git clone https://github.com/SymbolicPathFinder/jpf-symbc.git</code></pre></figure> <p><br/> <strong>4.2 Build jpf-symbc</strong><br/></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">ant build</code></pre></figure> <details> <summary>Build Log</summary> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">    yannic@Yannics-MacBook-Pro jpf-symbc % ant build
+    Buildfile: /Users/yannic/repositories/jpf-symbc/build.xml
+    
+    <span class="nt">-init</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build
+    
+    <span class="nt">-compile-annotations</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/annotations
+        <span class="o">[</span>javac] Compiling 4 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/annotations
+    
+    <span class="nt">-compile-main</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/main
+        <span class="o">[</span>javac] Compiling 335 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/main
+        <span class="o">[</span>javac] Note: Some input files use unchecked or unsafe operations.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:unchecked <span class="k">for </span>details.
+    
+    <span class="nt">-compile-peers</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/peers
+        <span class="o">[</span>javac] Compiling 7 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/peers
+    
+    <span class="nt">-compile-classes</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/classes
+        <span class="o">[</span>javac] Compiling 9 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/classes
+    
+    <span class="nt">-compile-tests</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/tests
+        <span class="o">[</span>javac] Compiling 197 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/tests
+    
+    <span class="nt">-compile-examples</span>:
+        <span class="o">[</span><span class="nb">mkdir</span><span class="o">]</span> Created <span class="nb">dir</span>: /Users/yannic/repositories/jpf-symbc/build/examples
+        <span class="o">[</span>javac] Compiling 213 <span class="nb">source </span>files to /Users/yannic/repositories/jpf-symbc/build/examples
+        <span class="o">[</span>javac] Note: Some input files use unchecked or unsafe operations.
+        <span class="o">[</span>javac] Note: Recompile with <span class="nt">-Xlint</span>:unchecked <span class="k">for </span>details.
+    
+    compile:
+    
+    <span class="nt">-jar-jvm</span>:
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-symbc/build/jpf-symbc.jar
+    
+    <span class="nt">-jar-jpf</span>:
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-symbc/build/jpf-symbc-classes.jar
+    
+    <span class="nt">-jar-annotations</span>:
+          <span class="o">[</span>jar] Building jar: /Users/yannic/repositories/jpf-symbc/build/jpf-symbc-annotations.jar
+    
+    build:
+    
+    BUILD SUCCESSFUL
+    Total <span class="nb">time</span>: 7 seconds</code></pre></figure> </details> <p><br/> <br/></p> <h3 id="5-run-simple-example-from-the-command-line">5. Run Simple Example from the command line</h3> <hr/> <p><em>Inside the jpf-symbc folder, run the following command:</em></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">java <span class="nt">-Xmx1024m</span> <span class="nt">-ea</span> <span class="nt">-jar</span> ../jpf-core/build/RunJPF.jar src/examples/demo/NumericExample.jpf</code></pre></figure> <details> <summary>Console Output</summary> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">    yannic@Yannics-MacBook-Pro jpf-symbc % java <span class="nt">-Xmx1024m</span> <span class="nt">-ea</span> <span class="nt">-jar</span> ../jpf-core/build/RunJPF.jar src/examples/demo/NumericExample.jpf
+    symbolic.min_int<span class="o">=</span><span class="nt">-2147483648</span>
+    symbolic.min_long<span class="o">=</span><span class="nt">-9223372036854775808</span>
+    symbolic.min_short<span class="o">=</span><span class="nt">-32768</span>
+    symbolic.min_byte<span class="o">=</span><span class="nt">-128</span>
+    symbolic.min_char<span class="o">=</span>0
+    symbolic.max_int<span class="o">=</span>2147483647
+    symbolic.max_long<span class="o">=</span>9223372036854775807
+    symbolic.max_short<span class="o">=</span>32767
+    symbolic.max_byte<span class="o">=</span>127
+    symbolic.max_char<span class="o">=</span>65535
+    symbolic.min_double<span class="o">=</span>4.9E-324
+    symbolic.max_double<span class="o">=</span>1.7976931348623157E308
+    JavaPathfinder core system v8.0 - <span class="o">(</span>C<span class="o">)</span> 2005-2014 United States Government. All rights reserved.
+    
+    <span class="o">======================================================</span> system under <span class="nb">test
+    </span>demo.NumericExample.main<span class="o">()</span>
+    
+    <span class="o">======================================================</span> search started: 23/6/22 11:03 AM
+    <span class="o">&gt;</span>0
+    &lt;<span class="o">=</span>0
+    Property Violated: PC is constraint <span class="c"># = 1</span>
+    <span class="o">((</span>a_1_SYMINT[15] + b_2_SYMINT[-13]<span class="o">)</span> - CONST_2<span class="o">)</span> <span class="o">==</span> CONST_0
+    Property Violated: result is  <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    <span class="k">****************************</span>
+    
+    <span class="o">======================================================</span> error 1
+    gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+    java.lang.ArithmeticException: div by 0
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> snapshot <span class="c">#1</span>
+    thread java.lang.Thread:<span class="o">{</span><span class="nb">id</span>:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0<span class="o">}</span>
+      call stack:
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> Method Summaries
+    Inputs: a_1_SYMINT,b_2_SYMINT
+    
+    demo.NumericExample.test<span class="o">(</span><span class="nt">-50</span>,17<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>0,0<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>15,-13<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    
+    <span class="o">======================================================</span> Method Summaries <span class="o">(</span>HTML<span class="o">)</span>
+    &lt;h1&gt;Test Cases Generated by Symbolic JavaPath Finder <span class="k">for </span>demo.NumericExample.test <span class="o">(</span>Path Coverage<span class="o">)</span> &lt;/h1&gt;
+    &lt;table <span class="nv">border</span><span class="o">=</span>1&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;a_1_SYMINT&lt;/td&gt;&lt;td&gt;b_2_SYMINT&lt;/td&gt;&lt;td&gt;RETURN&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;-50&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;15&lt;/td&gt;&lt;td&gt;-13&lt;/td&gt;&lt;td&gt;<span class="s2">"java.lang.ArithmeticException: div by 0..."</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    
+    <span class="o">======================================================</span> results
+    error <span class="c">#1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArithmeticException: div by 0  at demo.N..."</span>
+    
+    <span class="o">======================================================</span> statistics
+    elapsed <span class="nb">time</span>:       00:00:00
+    states:             <span class="nv">new</span><span class="o">=</span>5,visited<span class="o">=</span>0,backtracked<span class="o">=</span>5,end<span class="o">=</span>2
+    search:             <span class="nv">maxDepth</span><span class="o">=</span>3,constraints<span class="o">=</span>0
+    choice generators:  <span class="nv">thread</span><span class="o">=</span>1 <span class="o">(</span><span class="nv">signal</span><span class="o">=</span>0,lock<span class="o">=</span>1,sharedRef<span class="o">=</span>0,threadApi<span class="o">=</span>0,reschedule<span class="o">=</span>0<span class="o">)</span>, <span class="nv">data</span><span class="o">=</span>2
+    heap:               <span class="nv">new</span><span class="o">=</span>366,released<span class="o">=</span>20,maxLive<span class="o">=</span>344,gcCycles<span class="o">=</span>3
+    instructions:       3132
+    max memory:         245MB
+    loaded code:        <span class="nv">classes</span><span class="o">=</span>64,methods<span class="o">=</span>1309
+    
+    <span class="o">======================================================</span> search finished: 23/6/22 11:03 AM</code></pre></figure> </details> <p><br/> <br/></p> <h3 id="6-use-spf-inside-eclipse">6. Use SPF inside Eclipse</h3> <hr/> <p><strong>6.1 Import both projects to Eclipse</strong><br/> <img src="/assets/img/spf-setup-ant/import.png" width="400" alt="Import projects to Eclipse"/></p> <p><br/> <strong>6.2 Run Simple Example</strong><br/></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">src/examples/demo/NumericExample.java
+src/examples/demo/NumericExample.jpf</code></pre></figure> <p><img src="/assets/img/spf-setup-ant/example.png" width="550" alt="Example in the SPF repository."/></p> <p><img src="/assets/img/spf-setup-ant/run.png" width="400" alt="Run SPF in Eclipse."/></p> <details> <summary>Console Output</summary> <figure class="highlight"><pre><code class="language-java" data-lang="java">    <span class="o">[</span><span class="nc">Console</span> <span class="n">output</span> <span class="n">redirected</span> <span class="n">to</span> <span class="nl">file:</span><span class="o">/</span><span class="nc">Users</span><span class="o">/</span><span class="n">yannic</span><span class="o">/</span><span class="n">_myfiles</span><span class="o">/</span><span class="n">_eclipse</span><span class="o">/</span><span class="n">eclipse_spf</span><span class="o">/</span><span class="nc">Eclipse</span><span class="o">.</span><span class="na">app</span><span class="o">/</span><span class="nc">Contents</span><span class="o">/</span><span class="nc">MacOS</span><span class="o">/</span><span class="n">output</span><span class="o">]</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_int</span><span class="o">=-</span><span class="mi">2147483648</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_long</span><span class="o">=-</span><span class="mi">9223372036854775808</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_short</span><span class="o">=-</span><span class="mi">32768</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_byte</span><span class="o">=-</span><span class="mi">128</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_char</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_int</span><span class="o">=</span><span class="mi">2147483647</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_long</span><span class="o">=</span><span class="mi">9223372036854775807</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_short</span><span class="o">=</span><span class="mi">32767</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_byte</span><span class="o">=</span><span class="mi">127</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_char</span><span class="o">=</span><span class="mi">65535</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">min_double</span><span class="o">=</span><span class="mf">4.9</span><span class="no">E</span><span class="o">-</span><span class="mi">324</span>
+    <span class="n">symbolic</span><span class="o">.</span><span class="na">max_double</span><span class="o">=</span><span class="mf">1.7976931348623157E308</span>
+    <span class="nc">JavaPathfinder</span> <span class="n">core</span> <span class="n">system</span> <span class="n">v8</span><span class="o">.</span><span class="mi">0</span> <span class="o">-</span> <span class="o">(</span><span class="no">C</span><span class="o">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2014</span> <span class="nc">United</span> <span class="nc">States</span> <span class="nc">Government</span><span class="o">.</span> <span class="nc">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="o">.</span>
+    
+    <span class="o">======================================================</span> <span class="n">system</span> <span class="n">under</span> <span class="n">test</span>
+    <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">main</span><span class="o">()</span>
+    
+    <span class="o">======================================================</span> <span class="n">search</span> <span class="nl">started:</span> <span class="mi">23</span><span class="o">/</span><span class="mi">6</span><span class="o">/</span><span class="mi">22</span> <span class="mi">9</span><span class="o">:</span><span class="mi">59</span> <span class="no">AM</span>
+    <span class="o">&gt;</span><span class="mi">0</span>
+    <span class="o">&lt;=</span><span class="mi">0</span>
+    <span class="nc">Property</span> <span class="nl">Violated:</span> <span class="no">PC</span> <span class="n">is</span> <span class="n">constraint</span> <span class="err">#</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="o">((</span><span class="n">a_1_SYMINT</span><span class="o">[</span><span class="mi">15</span><span class="o">]</span> <span class="o">+</span> <span class="n">b_2_SYMINT</span><span class="o">[-</span><span class="mi">13</span><span class="o">])</span> <span class="o">-</span> <span class="no">CONST_2</span><span class="o">)</span> <span class="o">==</span> <span class="no">CONST_0</span>
+    <span class="nc">Property</span> <span class="nl">Violated:</span> <span class="n">result</span> <span class="n">is</span>  <span class="s">"java.lang.ArithmeticException: div by 0..."</span>
+    <span class="o">****************************</span>
+    
+    <span class="o">======================================================</span> <span class="n">error</span> <span class="mi">1</span>
+    <span class="n">gov</span><span class="o">.</span><span class="na">nasa</span><span class="o">.</span><span class="na">jpf</span><span class="o">.</span><span class="na">vm</span><span class="o">.</span><span class="na">NoUncaughtExceptionsProperty</span>
+    <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">ArithmeticException</span><span class="o">:</span> <span class="n">div</span> <span class="n">by</span> <span class="mi">0</span>
+    	<span class="n">at</span> <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="nc">NumericExample</span><span class="o">.</span><span class="na">java</span><span class="o">:</span><span class="mi">26</span><span class="o">)</span>
+    	<span class="n">at</span> <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="nc">NumericExample</span><span class="o">.</span><span class="na">java</span><span class="o">:</span><span class="mi">34</span><span class="o">)</span>
+    
+    <span class="o">======================================================</span> <span class="n">snapshot</span> <span class="err">#</span><span class="mi">1</span>
+    <span class="n">thread</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Thread</span><span class="o">:{</span><span class="nl">id:</span><span class="mi">0</span><span class="o">,</span><span class="nl">name:</span><span class="n">main</span><span class="o">,</span><span class="nl">status:</span><span class="no">RUNNING</span><span class="o">,</span><span class="nl">priority:</span><span class="mi">5</span><span class="o">,</span><span class="nl">isDaemon:</span><span class="kc">false</span><span class="o">,</span><span class="nl">lockCount:</span><span class="mi">0</span><span class="o">,</span><span class="nl">suspendCount:</span><span class="mi">0</span><span class="o">}</span>
+      <span class="n">call</span> <span class="nl">stack:</span>
+    	<span class="n">at</span> <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="nc">NumericExample</span><span class="o">.</span><span class="na">java</span><span class="o">:</span><span class="mi">26</span><span class="o">)</span>
+    	<span class="n">at</span> <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="nc">NumericExample</span><span class="o">.</span><span class="na">java</span><span class="o">:</span><span class="mi">34</span><span class="o">)</span>
+    
+    <span class="o">======================================================</span> <span class="nc">Method</span> <span class="nc">Summaries</span>
+    <span class="nl">Inputs:</span> <span class="n">a_1_SYMINT</span><span class="o">,</span><span class="n">b_2_SYMINT</span>
+    
+    <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span><span class="o">(-</span><span class="mi">50</span><span class="o">,</span><span class="mi">17</span><span class="o">)</span>  <span class="o">--&gt;</span> <span class="nc">Return</span> <span class="nl">Value:</span> <span class="o">--</span>
+    <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">)</span>  <span class="o">--&gt;</span> <span class="nc">Return</span> <span class="nl">Value:</span> <span class="o">--</span>
+    <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span><span class="o">(</span><span class="mi">15</span><span class="o">,-</span><span class="mi">13</span><span class="o">)</span>  <span class="o">--&gt;</span> <span class="s">"java.lang.ArithmeticException: div by 0..."</span>
+    
+    <span class="o">======================================================</span> <span class="nc">Method</span> <span class="nf">Summaries</span> <span class="o">(</span><span class="no">HTML</span><span class="o">)</span>
+    <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="nc">Test</span> <span class="nc">Cases</span> <span class="nc">Generated</span> <span class="n">by</span> <span class="nc">Symbolic</span> <span class="nc">JavaPath</span> <span class="nc">Finder</span> <span class="k">for</span> <span class="n">demo</span><span class="o">.</span><span class="na">NumericExample</span><span class="o">.</span><span class="na">test</span> <span class="o">(</span><span class="nc">Path</span> <span class="nc">Coverage</span><span class="o">)</span> <span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">table</span> <span class="n">border</span><span class="o">=</span><span class="mi">1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">a_1_SYMINT</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">b_2_SYMINT</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="no">RETURN</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;-</span><span class="mi">50</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">17</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="nc">Return</span> <span class="nl">Value:</span> <span class="o">--&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="nc">Return</span> <span class="nl">Value:</span> <span class="o">--&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="mi">15</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;-</span><span class="mi">13</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="s">"java.lang.ArithmeticException: div by 0..."</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+    
+    <span class="o">======================================================</span> <span class="n">results</span>
+    <span class="n">error</span> <span class="err">#</span><span class="mi">1</span><span class="o">:</span> <span class="n">gov</span><span class="o">.</span><span class="na">nasa</span><span class="o">.</span><span class="na">jpf</span><span class="o">.</span><span class="na">vm</span><span class="o">.</span><span class="na">NoUncaughtExceptionsProperty</span> <span class="s">"java.lang.ArithmeticException: div by 0  at demo.N..."</span>
+    
+    <span class="o">======================================================</span> <span class="n">statistics</span>
+    <span class="n">elapsed</span> <span class="nl">time:</span>       <span class="mo">00</span><span class="o">:</span><span class="mo">00</span><span class="o">:</span><span class="mo">00</span>
+    <span class="nl">states:</span>             <span class="k">new</span><span class="o">=</span><span class="mi">5</span><span class="o">,</span><span class="n">visited</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">backtracked</span><span class="o">=</span><span class="mi">5</span><span class="o">,</span><span class="n">end</span><span class="o">=</span><span class="mi">2</span>
+    <span class="nl">search:</span>             <span class="n">maxDepth</span><span class="o">=</span><span class="mi">3</span><span class="o">,</span><span class="n">constraints</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">choice</span> <span class="nl">generators:</span>  <span class="n">thread</span><span class="o">=</span><span class="mi">1</span> <span class="o">(</span><span class="n">signal</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">lock</span><span class="o">=</span><span class="mi">1</span><span class="o">,</span><span class="n">sharedRef</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">threadApi</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">reschedule</span><span class="o">=</span><span class="mi">0</span><span class="o">),</span> <span class="n">data</span><span class="o">=</span><span class="mi">2</span>
+    <span class="nl">heap:</span>               <span class="k">new</span><span class="o">=</span><span class="mi">366</span><span class="o">,</span><span class="n">released</span><span class="o">=</span><span class="mi">20</span><span class="o">,</span><span class="n">maxLive</span><span class="o">=</span><span class="mi">344</span><span class="o">,</span><span class="n">gcCycles</span><span class="o">=</span><span class="mi">3</span>
+    <span class="nl">instructions:</span>       <span class="mi">3132</span>
+    <span class="n">max</span> <span class="nl">memory:</span>         <span class="mi">245</span><span class="no">MB</span>
+    <span class="n">loaded</span> <span class="nl">code:</span>        <span class="n">classes</span><span class="o">=</span><span class="mi">64</span><span class="o">,</span><span class="n">methods</span><span class="o">=</span><span class="mi">1309</span>
+    
+    <span class="o">======================================================</span> <span class="n">search</span> <span class="nl">finished:</span> <span class="mi">23</span><span class="o">/</span><span class="mi">6</span><span class="o">/</span><span class="mi">22</span> <span class="mi">9</span><span class="o">:</span><span class="mi">59</span> <span class="no">AM</span></code></pre></figure> </details> <p><br/></p> <h3 id="7-try-z3-as-constraint-solver">7. Try Z3 as constraint solver</h3> <hr/> <p><strong>7.1 → Change configuration to use z3</strong><br/></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">target</span><span class="o">=</span>demo.NumericExample
+<span class="nv">classpath</span><span class="o">=</span><span class="k">${</span><span class="nv">jpf</span><span class="p">-symbc</span><span class="k">}</span>/build/examples
+<span class="nv">sourcepath</span><span class="o">=</span><span class="k">${</span><span class="nv">jpf</span><span class="p">-symbc</span><span class="k">}</span>/src/examples
+symbolic.method <span class="o">=</span> demo.NumericExample.test<span class="o">(</span>sym#sym<span class="o">)</span>
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
 
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+<span class="c">#symbolic.dp=coral</span>
+symbolic.dp<span class="o">=</span>z3
+listener <span class="o">=</span> .symbc.SymbolicListener
 
-  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div> <p>A regular blockquote can be used as following:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
-<span class="gt">&gt; and it can be used as usual</span>
-</code></pre></div></div> <blockquote> <p>This is a regular blockquote and it can be used as usual</p> </blockquote> <p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; A tip can be used when you want to give advice</span>
-<span class="gt">&gt; related to a certain content.</span>
-{: .block-tip }
-</code></pre></div></div> <blockquote class="block-tip"> <h5 id="tip">TIP</h5> <p>A tip can be used when you want to give advice related to a certain content.</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a warning, and thus should</span>
-<span class="gt">&gt; be used when you want to warn the user</span>
-{: .block-warning }
-</code></pre></div></div> <blockquote class="block-warning"> <h5 id="warning">WARNING</h5> <p>This is a warning, and thus should be used when you want to warn the user</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a danger zone, and thus should</span>
-<span class="gt">&gt; be used carefully</span>
-{: .block-danger }
-</code></pre></div></div> <blockquote class="block-danger"> <h5 id="danger">DANGER</h5> <p>This is a danger zone, and thus should be used carefully</p> </blockquote>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="blockquotes"/><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://alshedivat.github.io/al-folio/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar"/><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p> <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2> <p>To add a table of contents to a post as a sidebar, simply add</p> <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
-  <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
-</code></pre></div></div> <p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p> <h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2> <p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p> <h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="toc"/><category term="sidebar"/><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">a post with audios</title><link href="https://alshedivat.github.io/al-folio/blog/2023/audios/" rel="alternate" type="text/html" title="a post with audios"/><published>2023-04-25T10:25:00+00:00</published><updated>2023-04-25T10:25:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/audios</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/audios/"><![CDATA[<p>This is an example post with audios. It supports local audio files.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <audio src="/al-folio/assets/audio/epicaly-short-113909.mp3" controls=""/> </figure> </div> <div class="col-sm mt-3 mt-md-0"> <figure> <audio src="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls=""/> </figure> </div> </div> <div class="caption"> A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all. </div>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="audios"/><summary type="html"><![CDATA[this is what included audios could look like]]></summary></entry><entry><title type="html">a post with videos</title><link href="https://alshedivat.github.io/al-folio/blog/2023/videos/" rel="alternate" type="text/html" title="a post with videos"/><published>2023-04-24T21:01:00+00:00</published><updated>2023-04-24T21:01:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/videos</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/videos/"><![CDATA[<p>This is an example post with videos. It supports local video files.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <video src="/al-folio/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" autoplay="" controls=""/> </figure> </div> <div class="col-sm mt-3 mt-md-0"> <figure> <video src="/al-folio/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" controls=""/> </figure> </div> </div> <div class="caption"> A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all. </div> <p>It does also support embedding videos from different sources. Here are some examples:</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto"/> </figure> </div> <div class="col-sm mt-3 mt-md-0"> <figure> <iframe src="https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&amp;title=0&amp;byline=0&amp;portrait=0" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto"/> </figure> </div> </div>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="videos"/><summary type="html"><![CDATA[this is what included videos could look like]]></summary></entry><entry><title type="html">displaying beautiful tables with Bootstrap Tables</title><link href="https://alshedivat.github.io/al-folio/blog/2023/tables/" rel="alternate" type="text/html" title="displaying beautiful tables with Bootstrap Tables"/><published>2023-03-20T18:37:00+00:00</published><updated>2023-03-20T18:37:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/tables</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/tables/"><![CDATA[<p>Using markdown to display tables is easy. Just use the following syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
-| :----------- | :------------: | ------------: |
-| Left 1       | center 1       | right 1       |
-| Left 2       | center 2       | right 2       |
-| Left 3       | center 3       | right 3       |
-</code></pre></div></div> <p>That will generate:</p> <table> <thead> <tr> <th style="text-align: left">Left aligned</th> <th style="text-align: center">Center aligned</th> <th style="text-align: right">Right aligned</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">Left 1</td> <td style="text-align: center">center 1</td> <td style="text-align: right">right 1</td> </tr> <tr> <td style="text-align: left">Left 2</td> <td style="text-align: center">center 2</td> <td style="text-align: right">right 2</td> </tr> <tr> <td style="text-align: left">Left 3</td> <td style="text-align: center">center 3</td> <td style="text-align: right">right 3</td> </tr> </tbody> </table> <p></p> <p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/">Bootstrap Table</a>, loaded from a JSON file:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">id=</span><span class="s">"table"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div> <table data-toggle="table" data-url="/al-folio/assets/json/table_data.json"> <thead> <tr> <th data-field="id">ID</th> <th data-field="name">Item Name</th> <th data-field="price">Item Price</th> </tr> </thead> </table> <p></p> <p>By using <a href="https://bootstrap-table.com/">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html">documentation</a>.</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
-  <span class="na">data-height=</span><span class="s">"460"</span>
-  <span class="na">data-pagination=</span><span class="s">"true"</span>
-  <span class="na">data-search=</span><span class="s">"true"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div> <table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/al-folio/assets/json/table_data.json"> <thead> <tr> <th data-checkbox="true"></th> <th data-field="id" data-halign="left" data-align="center" data-sortable="true">ID</th> <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Item Name</th> <th data-field="price" data-halign="right" data-align="left" data-sortable="true">Item Price</th> </tr> </thead> </table>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="tables"/><summary type="html"><![CDATA[an example of how to use Bootstrap Tables]]></summary></entry><entry><title type="html">a post with table of contents</title><link href="https://alshedivat.github.io/al-folio/blog/2023/table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents"/><published>2023-03-20T15:59:00+00:00</published><updated>2023-03-20T15:59:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2023/table-of-contents</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2023/table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents in the beginning of the post.</p> <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2> <p>To add a table of contents to a post, simply add</p> <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
-  <span class="na">beginning</span><span class="pi">:</span> <span class="kc">true</span>
-</code></pre></div></div> <p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post.</p> <h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h2 id="table-of-contents-options">Table of Contents Options</h2> <p>If you want to learn more about how to customize the table of contents, you can check the <a href="https://github.com/toshimaru/jekyll-toc">jekyll-toc</a> repository.</p> <h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p> <h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3> <p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="toc"/><summary type="html"><![CDATA[an example of a blog post with table of contents]]></summary></entry><entry><title type="html">a post with giscus comments</title><link href="https://alshedivat.github.io/al-folio/blog/2022/giscus-comments/" rel="alternate" type="text/html" title="a post with giscus comments"/><published>2022-12-10T15:59:00+00:00</published><updated>2022-12-10T15:59:00+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2022/giscus-comments</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2022/giscus-comments/"><![CDATA[<p>This post shows how to add GISCUS comments.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="external-services"/><category term="comments"/><summary type="html"><![CDATA[an example of a blog post with giscus comments]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://alshedivat.github.io/al-folio/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog"/><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://alshedivat.github.io/al-folio/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://alshedivat.github.io/al-folio/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry></feed>
+search.multiple_errors<span class="o">=</span><span class="nb">true</span></code></pre></figure> <p>Will result in an <strong>error</strong>:</p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">java.lang.UnsatisfiedLinkError: no libz3java <span class="k">in </span>java.library.path
+	at java.lang.ClassLoader.loadLibrary<span class="o">(</span>ClassLoader.java:1860<span class="o">)</span>
+	at java.lang.Runtime.loadLibrary0<span class="o">(</span>Runtime.java:871<span class="o">)</span>
+	at java.lang.System.loadLibrary<span class="o">(</span>System.java:1124<span class="o">)</span>
+	at com.microsoft.z3.Native.&lt;clinit&gt;<span class="o">(</span>Native.java:14<span class="o">)</span>
+	at com.microsoft.z3.Context.&lt;init&gt;<span class="o">(</span>Context.java:59<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.solvers.ProblemZ3<span class="nv">$Z3Wrapper</span>.&lt;init&gt;<span class="o">(</span>ProblemZ3.java:75<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.solvers.ProblemZ3<span class="nv">$Z3Wrapper</span>.getInstance<span class="o">(</span>ProblemZ3.java:69<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.solvers.ProblemZ3.&lt;init&gt;<span class="o">(</span>ProblemZ3.java:95<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.SymbolicConstraintsGeneral.isSatisfiable<span class="o">(</span>SymbolicConstraintsGeneral.java:98<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.PathCondition.simplifyOld<span class="o">(</span>PathCondition.java:393<span class="o">)</span>
+	at gov.nasa.jpf.symbc.numeric.PathCondition.simplify<span class="o">(</span>PathCondition.java:340<span class="o">)</span>
+	at gov.nasa.jpf.symbc.bytecode.IDIV.execute<span class="o">(</span>IDIV.java:121<span class="o">)</span>
+	at gov.nasa.jpf.vm.ThreadInfo.executeInstruction<span class="o">(</span>ThreadInfo.java:1908<span class="o">)</span>
+	at gov.nasa.jpf.vm.ThreadInfo.executeTransition<span class="o">(</span>ThreadInfo.java:1859<span class="o">)</span>
+	at gov.nasa.jpf.vm.SystemState.executeNextTransition<span class="o">(</span>SystemState.java:765<span class="o">)</span>
+	at gov.nasa.jpf.vm.VM.forward<span class="o">(</span>VM.java:1722<span class="o">)</span>
+	at gov.nasa.jpf.search.Search.forward<span class="o">(</span>Search.java:579<span class="o">)</span>
+	at gov.nasa.jpf.search.DFSearch.search<span class="o">(</span>DFSearch.java:79<span class="o">)</span>
+	at gov.nasa.jpf.JPF.run<span class="o">(</span>JPF.java:613<span class="o">)</span>
+	at gov.nasa.jpf.JPF.start<span class="o">(</span>JPF.java:189<span class="o">)</span>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0<span class="o">(</span>Native Method<span class="o">)</span>
+	at sun.reflect.NativeMethodAccessorImpl.invoke<span class="o">(</span>NativeMethodAccessorImpl.java:62<span class="o">)</span>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke<span class="o">(</span>DelegatingMethodAccessorImpl.java:43<span class="o">)</span>
+	at java.lang.reflect.Method.invoke<span class="o">(</span>Method.java:498<span class="o">)</span>
+	at gov.nasa.jpf.tool.Run.call<span class="o">(</span>Run.java:80<span class="o">)</span>
+	at gov.nasa.jpf.tool.RunJPF.main<span class="o">(</span>RunJPF.java:116<span class="o">)</span></code></pre></figure> <p><br/> <strong>7.2 → Set the right java library path to the lib folder where the z3 native libraries are located</strong><br/> <img src="/assets/img/spf-setup-ant/config.png" width="550" alt="Setting the java library path in the Eclipse Run Configuration."/></p> <ul> <li>MacOS: <ul> <li>Key: DYLD_LIBRARY_PATH</li> <li>Value: /Users/yannic/repositories/jpf-symbc/lib</li> </ul> </li> <li>Linux: <ul> <li>Key: LD_LIBRARY_PATH</li> </ul> </li> <li>Windows: <ul> <li>Key: PATH</li> </ul> </li> </ul> <details> <summary>Successful Run Log</summary> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">    <span class="o">[</span>Console output redirected to file:/Users/yannic/_myfiles/_eclipse/eclipse_spf/Eclipse.app/Contents/MacOS/output]
+    symbolic.min_int<span class="o">=</span><span class="nt">-2147483648</span>
+    symbolic.min_long<span class="o">=</span><span class="nt">-9223372036854775808</span>
+    symbolic.min_short<span class="o">=</span><span class="nt">-32768</span>
+    symbolic.min_byte<span class="o">=</span><span class="nt">-128</span>
+    symbolic.min_char<span class="o">=</span>0
+    symbolic.max_int<span class="o">=</span>2147483647
+    symbolic.max_long<span class="o">=</span>9223372036854775807
+    symbolic.max_short<span class="o">=</span>32767
+    symbolic.max_byte<span class="o">=</span>127
+    symbolic.max_char<span class="o">=</span>65535
+    symbolic.min_double<span class="o">=</span>4.9E-324
+    symbolic.max_double<span class="o">=</span>1.7976931348623157E308
+    JavaPathfinder core system v8.0 - <span class="o">(</span>C<span class="o">)</span> 2005-2014 United States Government. All rights reserved.
+    
+    <span class="o">======================================================</span> system under <span class="nb">test
+    </span>demo.NumericExample.main<span class="o">()</span>
+    
+    <span class="o">======================================================</span> search started: 23/6/22 10:01 AM
+    <span class="o">&gt;</span>0
+    &lt;<span class="o">=</span>0
+    Property Violated: PC is constraint <span class="c"># = 1</span>
+    <span class="o">((</span>a_1_SYMINT[2] + b_2_SYMINT[0]<span class="o">)</span> - CONST_2<span class="o">)</span> <span class="o">==</span> CONST_0
+    Property Violated: result is  <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    <span class="k">****************************</span>
+    
+    <span class="o">======================================================</span> error 1
+    gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+    java.lang.ArithmeticException: div by 0
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> snapshot <span class="c">#1</span>
+    thread java.lang.Thread:<span class="o">{</span><span class="nb">id</span>:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0<span class="o">}</span>
+      call stack:
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> Method Summaries
+    Inputs: a_1_SYMINT,b_2_SYMINT
+    
+    demo.NumericExample.test<span class="o">(</span><span class="nt">-2147483648</span>,-2147483648<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>0,3<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>2,0<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    
+    <span class="o">======================================================</span> Method Summaries <span class="o">(</span>HTML<span class="o">)</span>
+    &lt;h1&gt;Test Cases Generated by Symbolic JavaPath Finder <span class="k">for </span>demo.NumericExample.test <span class="o">(</span>Path Coverage<span class="o">)</span> &lt;/h1&gt;
+    &lt;table <span class="nv">border</span><span class="o">=</span>1&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;a_1_SYMINT&lt;/td&gt;&lt;td&gt;b_2_SYMINT&lt;/td&gt;&lt;td&gt;RETURN&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;-2147483648&lt;/td&gt;&lt;td&gt;-2147483648&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;<span class="s2">"java.lang.ArithmeticException: div by 0..."</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    
+    <span class="o">======================================================</span> results
+    error <span class="c">#1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArithmeticException: div by 0  at demo.N..."</span>
+    
+    <span class="o">======================================================</span> statistics
+    elapsed <span class="nb">time</span>:       00:00:00
+    states:             <span class="nv">new</span><span class="o">=</span>5,visited<span class="o">=</span>0,backtracked<span class="o">=</span>5,end<span class="o">=</span>2
+    search:             <span class="nv">maxDepth</span><span class="o">=</span>3,constraints<span class="o">=</span>0
+    choice generators:  <span class="nv">thread</span><span class="o">=</span>1 <span class="o">(</span><span class="nv">signal</span><span class="o">=</span>0,lock<span class="o">=</span>1,sharedRef<span class="o">=</span>0,threadApi<span class="o">=</span>0,reschedule<span class="o">=</span>0<span class="o">)</span>, <span class="nv">data</span><span class="o">=</span>2
+    heap:               <span class="nv">new</span><span class="o">=</span>366,released<span class="o">=</span>20,maxLive<span class="o">=</span>344,gcCycles<span class="o">=</span>3
+    instructions:       3132
+    max memory:         245MB
+    loaded code:        <span class="nv">classes</span><span class="o">=</span>64,methods<span class="o">=</span>1309
+    
+    <span class="o">======================================================</span> search finished: 23/6/22 10:01 AM</code></pre></figure> </details> <p><br/> <strong>7.3 Simple Example with Z3 in the command line</strong><br/> <em>You can also run SPF from the command line with setting the java library path. For example (macOS):</em></p> <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Users/yannic/repositories/jpf-symbc/lib/ <span class="se">\</span>
+  /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/bin/java <span class="se">\</span>
+    <span class="nt">-Xmx1024m</span> <span class="nt">-ea</span> <span class="se">\</span>
+    <span class="nt">-jar</span> ../jpf-core/build/RunJPF.jar <span class="se">\</span>
+    src/examples/demo/NumericExample.jpf</code></pre></figure> <details> <summary>Console Output</summary> <figure class="highlight"><pre><code class="language-shell" data-lang="shell">    yannic@Yannics-MacBook-Pro jpf-symbc % <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>/Users/yannic/repositories/jpf-symbc/lib/ <span class="se">\</span>
+      /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/bin/java <span class="se">\</span>
+        <span class="nt">-Xmx1024m</span> <span class="nt">-ea</span> <span class="se">\</span>
+        <span class="nt">-jar</span> ../jpf-core/build/RunJPF.jar <span class="se">\</span>
+        src/examples/demo/NumericExample.jpf
+    symbolic.min_int<span class="o">=</span><span class="nt">-2147483648</span>
+    symbolic.min_long<span class="o">=</span><span class="nt">-9223372036854775808</span>
+    symbolic.min_short<span class="o">=</span><span class="nt">-32768</span>
+    symbolic.min_byte<span class="o">=</span><span class="nt">-128</span>
+    symbolic.min_char<span class="o">=</span>0
+    symbolic.max_int<span class="o">=</span>2147483647
+    symbolic.max_long<span class="o">=</span>9223372036854775807
+    symbolic.max_short<span class="o">=</span>32767
+    symbolic.max_byte<span class="o">=</span>127
+    symbolic.max_char<span class="o">=</span>65535
+    symbolic.min_double<span class="o">=</span>4.9E-324
+    symbolic.max_double<span class="o">=</span>1.7976931348623157E308
+    JavaPathfinder core system v8.0 - <span class="o">(</span>C<span class="o">)</span> 2005-2014 United States Government. All rights reserved.
+    
+    <span class="o">======================================================</span> system under <span class="nb">test
+    </span>demo.NumericExample.main<span class="o">()</span>
+    
+    <span class="o">======================================================</span> search started: 23/6/22 11:38 AM
+    <span class="o">&gt;</span>0
+    &lt;<span class="o">=</span>0
+    Property Violated: PC is constraint <span class="c"># = 1</span>
+    <span class="o">((</span>a_1_SYMINT[2] + b_2_SYMINT[0]<span class="o">)</span> - CONST_2<span class="o">)</span> <span class="o">==</span> CONST_0
+    Property Violated: result is  <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    <span class="k">****************************</span>
+    
+    <span class="o">======================================================</span> error 1
+    gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+    java.lang.ArithmeticException: div by 0
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> snapshot <span class="c">#1</span>
+    thread java.lang.Thread:<span class="o">{</span><span class="nb">id</span>:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0<span class="o">}</span>
+      call stack:
+    	at demo.NumericExample.test<span class="o">(</span>NumericExample.java:26<span class="o">)</span>
+    	at demo.NumericExample.main<span class="o">(</span>NumericExample.java:34<span class="o">)</span>
+    
+    <span class="o">======================================================</span> Method Summaries
+    Inputs: a_1_SYMINT,b_2_SYMINT
+    
+    demo.NumericExample.test<span class="o">(</span><span class="nt">-2147483648</span>,-2147483648<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>0,3<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> Return Value: <span class="nt">--</span>
+    demo.NumericExample.test<span class="o">(</span>2,0<span class="o">)</span>  <span class="nt">--</span><span class="o">&gt;</span> <span class="s2">"java.lang.ArithmeticException: div by 0..."</span>
+    
+    <span class="o">======================================================</span> Method Summaries <span class="o">(</span>HTML<span class="o">)</span>
+    &lt;h1&gt;Test Cases Generated by Symbolic JavaPath Finder <span class="k">for </span>demo.NumericExample.test <span class="o">(</span>Path Coverage<span class="o">)</span> &lt;/h1&gt;
+    &lt;table <span class="nv">border</span><span class="o">=</span>1&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;a_1_SYMINT&lt;/td&gt;&lt;td&gt;b_2_SYMINT&lt;/td&gt;&lt;td&gt;RETURN&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;-2147483648&lt;/td&gt;&lt;td&gt;-2147483648&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;0&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Return Value: <span class="nt">--</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;<span class="nb">tr</span><span class="o">&gt;</span>&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;<span class="s2">"java.lang.ArithmeticException: div by 0..."</span>&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    
+    <span class="o">======================================================</span> results
+    error <span class="c">#1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArithmeticException: div by 0  at demo.N..."</span>
+    
+    <span class="o">======================================================</span> statistics
+    elapsed <span class="nb">time</span>:       00:00:00
+    states:             <span class="nv">new</span><span class="o">=</span>5,visited<span class="o">=</span>0,backtracked<span class="o">=</span>5,end<span class="o">=</span>2
+    search:             <span class="nv">maxDepth</span><span class="o">=</span>3,constraints<span class="o">=</span>0
+    choice generators:  <span class="nv">thread</span><span class="o">=</span>1 <span class="o">(</span><span class="nv">signal</span><span class="o">=</span>0,lock<span class="o">=</span>1,sharedRef<span class="o">=</span>0,threadApi<span class="o">=</span>0,reschedule<span class="o">=</span>0<span class="o">)</span>, <span class="nv">data</span><span class="o">=</span>2
+    heap:               <span class="nv">new</span><span class="o">=</span>366,released<span class="o">=</span>20,maxLive<span class="o">=</span>344,gcCycles<span class="o">=</span>3
+    instructions:       3132
+    max memory:         245MB
+    loaded code:        <span class="nv">classes</span><span class="o">=</span>64,methods<span class="o">=</span>1309
+    
+    <span class="o">======================================================</span> search finished: 23/6/22 11:38 AM</code></pre></figure> </details> <p><br/></p> <h3 id="8-contact">8. Contact</h3> <hr/> <p>If you have any issues with these instructions, please send an email to <a href="mailto:yannic.noller@ieee.org">Yannic Noller</a>. Thanks!</p>]]></content><author><name></name></author><category term="tutorials"/><category term="spf"/><category term="tutorial"/><summary type="html"><![CDATA[This post includes some valuable hints for building SPF with Ant and some helpful advice for using it.]]></summary></entry></feed>
