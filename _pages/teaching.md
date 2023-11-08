@@ -27,15 +27,15 @@ nav_order: 4
 
 * **Summer, 2020**: *Seminar* -- Debugging and Program Repair
 * **Summer, 2020**: *Semesterproject* -- Modularization of the RAY-UI application
-* **Winnter, 2019**: *Tutorial* -- Software Engineering
-* **Winnter, 2019**: *Seminar* -- Automated Software Engineering
+* **Winter, 2019**: *Tutorial* -- Software Engineering
+* **Winter, 2019**: *Seminar* -- Automated Software Engineering
 * **Summer, 2019**: *Tutorial* -- Requirements Engineering and Software Architecture
 * **Summer, 2019**: *Seminar* -- Debugging and Program Repair
 * **Summer, 2018**: *Tutorial* -- Requirements Engineering and Software Architecture
 * **Summer, 2018**: *Tutorial* -- Methods and Models for Systemdesign
 * **Summer, 2017**: *Tutorial* -- Methods and Models for Systemdesign
-* **Winnter, 2016**: *Tutorial* -- Software Engineering
-* **Winnter, 2016**: *Seminar* -- Automated Software Engineering
+* **Winter, 2016**: *Tutorial* -- Software Engineering
+* **Winter, 2016**: *Seminar* -- Automated Software Engineering
 * **Summer, 2016**: *Tutorial* -- Methods and Models for Systemdesign
 
 <br>
