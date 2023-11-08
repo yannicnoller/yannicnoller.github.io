@@ -22,7 +22,7 @@ profiles:
   # PhD Students
   # Ma Yinhui <yinhui_ma@alumni.sutd.edu.sg>
   - align: right
-    image: unknown.jpg
+    image: yinhui.jpg
     content: team_yinhui_ma.md
     image_circular: true # crops the image to make it circular
     more_info: #
