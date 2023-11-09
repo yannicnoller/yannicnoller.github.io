@@ -14,7 +14,7 @@ nav_order: 5
 <ul>
 
 <li>PC member for the International Conference of Software Engineering (ICSE) 2024</li>
-<li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2023</li>
+<li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2024</li>
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2023</a></li>
 
@@ -57,7 +57,7 @@ nav_order: 5
 <br>
 <h3>Conference Committees</h3>
 <ul>
-<li>PC member for the International Conference of Software Engineering (ICSE) 2023 and 2024</li>
+<li>PC member for the International Conference of Software Engineering (ICSE) 2023-2025</li>
 <li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
 <li>PC member for the International Conference on Automated Software Engineering (ASE) 2022</li>
 <li>Poster Track committee member for <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
