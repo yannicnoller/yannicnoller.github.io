@@ -72,7 +72,7 @@ twitter_username: "yannicnoller" # your Twitter handle
 mastodon_username: "social.sigsoft.org/@yannicnoller" # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: "yannic-noller-0b80b179" # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: "https://scholar.google.com/citations?user=FPtbo2oAAAAJ" # your Google Scholar ID
+scholar_userid: "FPtbo2oAAAAJ" # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # "https://orcid.org/0000-0002-9318-8027" # your ORCID ID
