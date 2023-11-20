@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-Check also on <a href="https://scholar.google.com/citations?user=FPtbo2oAAAAJ&hl=en&oi=ao">Google Scholar</a>, <a href="https://www.semanticscholar.org/author/Yannic-Noller/32628820">Semantic Scholar</a>, <a href="https://dblp.uni-trier.de/pers/hd/n/Noller:Yannic">DBLP</a>, and <a href="https://dl.acm.org/author_page.cfm?id=99659237941">ACM DL</a>.<br>
+Check also on <a href="https://scholar.google.com/citations?user=FPtbo2oAAAAJ">Google Scholar</a>, <a href="https://www.semanticscholar.org/author/Yannic-Noller/32628820">Semantic Scholar</a>, <a href="https://dblp.uni-trier.de/pers/hd/n/Noller:Yannic">DBLP</a>, and <a href="https://dl.acm.org/author_page.cfm?id=99659237941">ACM DL</a>.<br>
 
 <!-- _pages/publications.md -->
 <div class="publications">
