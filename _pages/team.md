@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /team/
 title: Team
-description: members of the <b>Software Quality</b> research group @ SUTD
+description: members of the <b>Software Engineering</b> research group @ SUTD
 nav: true
 nav_order: 7
 
