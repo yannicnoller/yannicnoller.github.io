@@ -32,6 +32,12 @@ profiles:
     content: team_abram.md
     image_circular: true # crops the image to make it circular
     more_info: #
+  # Visiting Students
+  - align: right
+    image: mithushan.jpeg
+    content: team_mithushan.md
+    image_circular: true # crops the image to make it circular
+    more_info: #
   # 
   # Undergraduate Students
   # Past Members
