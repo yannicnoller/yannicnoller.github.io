@@ -15,6 +15,7 @@ nav_order: 5
 
 <li>PC member for the International Conference of Software Engineering (ICSE) 2024</li>
 <li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2024</li>
+<li>Tool Demonstrations Track committee member for ISSTA 2024</li>
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2023</a></li>
 
@@ -57,16 +58,18 @@ nav_order: 5
 <br>
 <h3>Conference Committees</h3>
 <ul>
-<li>PC member for the International Conference of Software Engineering (ICSE) 2023-2025</li>
-<li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
-<li>PC member for the International Conference on Automated Software Engineering (ASE) 2022</li>
+<li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
+<li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
+<li>Tool Demonstrations Track, ISSTA 2024</li>
+<li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022</li>
 <li>Poster Track committee member for <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
 </ul>
 
 <br>
 <h3>Journal Reviewing</h3>
 <ul>
-<li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li>
+<li>since 2020: Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
+<!-- <li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li> -->
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
 <li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021</li>
 <li>Journal of Systems and Software (<a href="https://www.journals.elsevier.com/journal-of-systems-and-software">JSS</a>) in 2021</li>
