@@ -62,7 +62,7 @@ nav_order: 5
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
 <li>Tool Demonstrations Track, ISSTA 2024</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022</li>
-<li>Poster Track committee member for <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
+<li>Poster Track, <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
 </ul>
 
 <br>
