@@ -3,6 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
+@INPROCEEDINGS{evorepair,
+  author={Ruan, Haifeng and Nguyen, Hoang Lam and Shariffdeen, Ridwan and Noller, Yannic and Roychoudhury, Abhik},
+  booktitle={2024 17th IEEE International Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={Evolutionary Testing for Program Repair}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={},
+  abstract={Automated program repair (APR) allows for autonomous software protection and improvement. Many proposed repair techniques rely on available test suites, since tests are available in real-world settings. Tests are incomplete specifications, however. As a result, repairs generated based on tests may suffer from the test overfitting problem. The patches produced by APR techniques may pass the given tests and thus be plausible, and yet be an incorrect patch. This hints towards more extensive test suites to guide program repair. 
+
+Generating additional tests to improve the test suite quality is generally difficult because the oracle or expected observable behavior of the generated tests is unknown. In our work, we first construct additional oracles by instrumenting buggy programs from the Defects4J benchmark with the knowledge obtained from the available bug reports. Then, we formulate a coevolution approach that generates tests and repairs in a unified workflow.
+The complete workflow is implemented as an extension of the well-known Java testing framework EvoSuite. This includes re-purposing the search in EvoSuite to search for repairs (instead of searching for tests) and enables an easy adoption for developers who are already familiar with EvoSuite for test suite generation.
+The evaluation of our tool EvoRepair shows that coevolution has a positive impact on the quality of patches and tests. 
+In future, we hope that coevolution of patches and tests can inspire new repair tools and techniques.},
+  keywords={},
+  doi={},
+  ISSN={},
+  month={},
+  abbr={ICST},
+}
+
 @article{fan2023intelligent,
   title={Intelligent Tutoring System: Experience of Linking Software Engineering and Programming Teaching},
   author={Fan, Zhiyu and Noller, Yannic and Dandekar, Ashish and Roychoudhury, Abhik},
