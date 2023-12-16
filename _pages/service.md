@@ -99,7 +99,8 @@ nav_order: 5
 <h3>Mentoring</h3>
 <ul>
 
-<li>Master Thesis, NUS, 2023, Sung Yong Kim</li>
+<li>Master Thesis, NUS, 2023, Sung Yong Kim, "Analysis on Large Language Model vulnerable code
+generation and self-repair ability"</li>
 
 <li>Final Year Project (FYP), NUS, 2023, Christopher Goh Zhen Fung, "Fixing of compilation errors in Intelligent Tutoring"</li>
 
