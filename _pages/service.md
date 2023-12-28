@@ -68,6 +68,8 @@ nav_order: 5
 <br>
 <h3>Journal Reviewing</h3>
 <ul>
+<li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023</li>
+<li>Communications of the ACM (<a href="https://cacm.acm.org">CACM</a>) in 2023</li>
 <li>since 2020: Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 <!-- <li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li> -->
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
