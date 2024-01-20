@@ -10,6 +10,7 @@ nav_order: 4
 #### Singapore University of Technology and Design
 ---
 
+* **STEAMxD 2024**: Instructor for the Machine Learning sessions of the [STEAMxD workshop 2024](https://smt.sutd.edu.sg/steamxd/steamxd-workshop-2024/)
 * **Fall 2023**: Instructor for <a href="https://smt.sutd.edu.sg/education/undergraduate/courses/10020-data-driven-world/">10.020 Data Driven World (DDW)</a>
 
 <br>
