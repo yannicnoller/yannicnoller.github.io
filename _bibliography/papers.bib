@@ -22,6 +22,7 @@ In future, we hope that coevolution of patches and tests can inspire new repair 
   ISSN={},
   month={},
   abbr={ICST},
+  pdf={icst2024_ruan_evorepair.pdf},
 }
 
 @INPROCEEDINGS{its_experience,
@@ -40,6 +41,19 @@ In future, we hope that coevolution of patches and tests can inspire new repair 
   abstract={The increasing number of computer science students pushes lecturers and tutors of first-year programming courses to their limits to provide high-quality feedback to the students. Existing systems that handle automated grading primarily focus on the automation of test case executions in the context of programming assignments. However, they cannot provide customized feedback about the students' errors, and hence, cannot replace the help of tutors. While recent research works in the area of automated grading and feedback generation address this issue by using automated repair techniques, so far, to the best of our knowledge, there has been no real-world deployment of such techniques. Based on the research advances in recent years, we have built an intelligent tutoring system that has the capability of providing automated feedback and grading. Furthermore, we designed a Software Engineering course that guides third-year undergraduate students in incrementally developing such a system over the coming years. Each year, students will make contributions that improve the current implementation, while at the same time, we can deploy the current system for usage by first year students. This paper describes our teaching concept, the intelligent tutoring system architecture, and our experience with the stakeholders. This software engineering project for the students has the key advantage that the users of the system are available in-house (i.e., students, tutors, and lecturers from the first-year programming courses). This helps organize requirements engineering sessions and builds awareness about their contribution to a "to be deployed" software project. In this multi-year teaching effort, we have incrementally built a tutoring system that can be used in first-year programming courses. Further, it represents a platform that can integrate the latest research results in APR for education.},
   pdf={https://arxiv.org/pdf/2310.05472.pdf},
   website={https://cs3213-fse.github.io},
+}
+
+@INPROCEEDINGS{spf_LLM_complexity_klee2024, 
+  author = {Skapars, Adrians and Sun, Youcheng and Noller, Yannic and P\u{a}s\u{a}reanu, Corina S.}, 
+  title = {Poster: Exploring Complexity Estimation with Symbolic Execution and Large Language Models}, 
+  booktitle = {4th International KLEE Workshop on Symbolic Execution}, 
+  year = {2024}, 
+  address = {Lisbon, Portugal}, 
+  month = {Apr.~15-16}, 
+  url = {https://srg.doc.ic.ac.uk/klee24/},
+  abbr={KLEE},
+  abstract={Symbolic program analysis is a powerful technique that explores the program space and searches for bugs and security vulnerabilities. However, it suffers from path explosion and complex constraint solving, which limits its applicability in practice. On the other hand, large Language Models (LLMs) have shown great potential in program comprehension and code generation while suffering from the ability to provide correctness guarantees. This work explores the symbiosis of symbolic analysis and large language models. In particular, we focus on estimating worst-case complexities by expanding the reach of symbolic analysis using LLMs. We propose to compute the worst-case execution behavior for small inputs via symbolic analysis and leverage the power of LLMs to generalize the obtained constraints. Therefore, we build a closer integration of Symbolic PathFinder (SPF) and ChatGPT. Preliminary results indicate that LLMs like ChatGPT can help SPF detect patterns for the worst-case complexity analysis, amplifying its search for inputs that can trigger denial-of-service attacks. The results and insights gained in this work will help researchers and software practitioners to design and develop secure software systems in the future. All datasets and implemented tools will be made open-source following open-source principles.},
+  pdf={klee2024_spf_chatgpt_poster.pdf},
 }
 
 @article{jmlkelinci,

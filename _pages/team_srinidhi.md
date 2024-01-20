@@ -1,6 +1,6 @@
 ### [Srinidhi H C](https://github.com/sequentialrant)
 *Research Associate*
 
-* will join in December 2023
+* joined in December 2023
 * working on automated testing and repair
 * Master of Science in Bioinformatics @ Manipal University, India
