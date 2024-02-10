@@ -13,6 +13,8 @@ nav_order: 5
 
 <ul>
 
+<li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
+
 <li>PC member for the International Conference of Software Engineering (ICSE) 2024</li>
 <li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2024</li>
 <li>Tool Demonstrations Track committee member for ISSTA 2024</li>
@@ -45,6 +47,7 @@ nav_order: 5
 <br>
 <h3>Organisation</h3>
 <ul>
+<li><a href="https://conf.researchr.org/home/issta-2025">ISSTA 2025</a> (Publicity Co-Chair)</li>
 <li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2023</a> (Organizing Committee)</li>
 <li><a href="https://2022.esec-fse.org">ESEC/FSE 2022</a> (Local Organization Co-Chair)</li>
 <li><a href="https://github.com/javapathfinder/jpf-core/wiki/Java-Pathfinder-Workshop-2022">JPF Workshop 2022</a> (Co-Organizer)</li>
