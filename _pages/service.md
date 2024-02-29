@@ -14,15 +14,16 @@ nav_order: 5
 <ul>
 
 <li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
-
-<li>PC member for the International Conference of Software Engineering (ICSE) 2024</li>
+<li>PC member for the International Conference of Software Engineering (ICSE) 2025</li>
 <li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2024</li>
+<li>Poster Track committee member for FSE 2024</li>
 <li>Tool Demonstrations Track committee member for ISSTA 2024</li>
 
-<li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2023</a></li>
+<li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a></li>
+
+<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2024</a></li>
 
 <li>Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
-
 
 </ul>
 
@@ -48,11 +49,13 @@ nav_order: 5
 <h3>Organisation</h3>
 <ul>
 <li><a href="https://conf.researchr.org/home/issta-2025">ISSTA 2025</a> (Publicity Co-Chair)</li>
+<li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a> (Organizing Committee)</li>
+<li><a href="https://summerofcode.withgoogle.com/programs/2024/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2024</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
 <li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2023</a> (Organizing Committee)</li>
 <li><a href="https://2022.esec-fse.org">ESEC/FSE 2022</a> (Local Organization Co-Chair)</li>
 <li><a href="https://github.com/javapathfinder/jpf-core/wiki/Java-Pathfinder-Workshop-2022">JPF Workshop 2022</a> (Co-Organizer)</li>
 <li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2022</a> (Artifact Evaluation Committee Chair)</li>
-<li><a href="https://summerofcode.withgoogle.com/programs/2022/organizations/the-jpf-team">Google Summer of Code (GSoC) 2022</a> Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a></li>
+<li><a href="https://summerofcode.withgoogle.com/programs/2022/organizations/the-jpf-team">Google Summer of Code (GSoC) 2022</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
 <li><a href="https://summerofcode.withgoogle.com/archive/2021/organizations/5712237452328960">Google Summer of Code (GSoC) 2021</a> Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a></li>
 <li><a href="http://www.ieee-scam.org/2021">SCAM 2021</a> (NIER Track co-chair)</li>
 <li><a href="https://a-test.org/">A-TEST 2020</a> (Online Tutorials Session Chair)</li>
@@ -63,6 +66,7 @@ nav_order: 5
 <ul>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
+<li>Poster Track, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
 <li>Tool Demonstrations Track, ISSTA 2024</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022</li>
 <li>Poster Track, <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
