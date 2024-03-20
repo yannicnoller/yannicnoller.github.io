@@ -75,12 +75,12 @@ nav_order: 5
 <br>
 <h3>Journal Reviewing</h3>
 <ul>
-<li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023</li>
+<li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023-2024</li>
 <li>Communications of the ACM (<a href="https://cacm.acm.org">CACM</a>) in 2023</li>
 <li>since 2020: Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 <!-- <li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li> -->
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
-<li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021</li>
+<li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021 and 2024</li>
 <li>Journal of Systems and Software (<a href="https://www.journals.elsevier.com/journal-of-systems-and-software">JSS</a>) in 2021</li>
 <li>Journal of Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>) in 2019</li>
 <li>Journal of Automated Software Engineering (<a href="https://link.springer.com/journal/10515">AUSE</a>) in 2019</li>
