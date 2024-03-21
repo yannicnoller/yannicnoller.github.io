@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Yannic
 middle_name:
 last_name: Noller
-email: yannic.noller@ieee.org
+email: yannic.noller@acm.org
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   <i>Assistant Professor</i> at SUTD
 footer_text: > # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
