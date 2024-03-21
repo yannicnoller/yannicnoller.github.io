@@ -646,4 +646,4 @@ DYLD_LIBRARY_PATH=/Users/yannic/repositories/jpf-symbc/lib/ \
 <br>
 ### 8. Contact
 ---
-If you have any issues with these instructions, please send an email to [Yannic Noller](mailto:yannic.noller@ieee.org).
+If you have any issues with these instructions, please send an email to [Yannic Noller](mailto:yannic.noller@acm.org).
