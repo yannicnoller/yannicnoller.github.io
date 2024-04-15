@@ -181,3 +181,8 @@ Apr 2013 - Mar 2014, <strong>University of Stuttgart</strong>, Germany <br>
 
 
 </ul>
+
+
+<h2 id="genealogy">Academic Genealogy</h2>
+---
+Check out my academic genealogy via the [Mathematics Genealogy Project](https://www.mathgenealogy.org/id.php?id=304918)!
