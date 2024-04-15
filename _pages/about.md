@@ -28,10 +28,14 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 Yannic ([CV](./cv)) currently leads the **Software Engineering** research group @ SUTD and has the general research goal to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems. In particular, he works in the following areas:
 
+<img title="Research Topics" alt="Research Topics" src="/assets/img/ResearchIntro_Yannic.jpg" width="350px" style="display: block; margin-left: auto;  margin-right: auto;"/>
+
 1. **Automated Program Repair**: developing new repair techniques to aid developers in fixing program bugs
 2. **Machine Learning Analysis**: automated analysis, testing, and repairing of machine learning models
 3. **Software Testing**: exploring and designing (hybrid) testing techniques to systematically generate test inputs that expose incorrect program behavior
 4. **Intelligent Tutoring Systems**: how to help CS students to learn programming by applying concepts from automated testing and repair to guide the students toward the right solution
 5. **Human Factors in SE**: studying developer needs and requirements for successful deployment of testing and repair techniques in development practice
+
+
 
 His Ph.D. work focused on differential software testing, in particular, by combining fuzzing and symbolic execution in the context of regression analysis, algorithmic complexity analysis, side-channel analysis, and robustness analysis of neural networks.
