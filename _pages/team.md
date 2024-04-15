@@ -55,4 +55,4 @@ profiles-visitors:
 <br>
 ## Past members
 ---
-* Ma Yinhui (PhD student): advisor change in April 2024 to <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change
+* Ma Yinhui (PhD student): advisor change in March 2024 to <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change
