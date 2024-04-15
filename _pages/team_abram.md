@@ -1,5 +1,5 @@
 ### [Abram Tan Jia Han](https://abramtan.com/)
-*Master Student*
+*Master Student (SUTD)*
 
-* will start in January 2024
-* tentative topic: "Data Quality Evaluation Techniques for Robust Online Machine Learning"
+* started in January 2024
+* topic: "Intelligent Mentoring System for Software Engineering"

@@ -6,13 +6,16 @@ description: members of the <b>Software Engineering</b> research group @ SUTD
 nav: true
 nav_order: 4
 
-profiles:
+profiles-faculty:
   # Faculty
   - align: right
     image: prof_pic.jpg
     content: team_yannic.md
     image_circular: false # crops the image to make it circular
+    role: faculty
     more_info: #
+
+profiles-staff:
   # Research Staff
   - align: right
     image: haolan.jpg
@@ -24,26 +27,32 @@ profiles:
     content: team_srinidhi.md
     image_circular: false # crops the image to make it circular
     more_info: #
-  # PhD Students
-  # Ma Yinhui <yinhui_ma@alumni.sutd.edu.sg>
-  - align: right
-    image: yinhui.jpg
-    content: team_yinhui_ma.md
-    image_circular: false # crops the image to make it circular
-    more_info: #
+
+profiles-master:
   # Master Students
   - align: right
     image: abram.jpeg
     content: team_abram.md
     image_circular: false # crops the image to make it circular
     more_info: #
+
+# PhD Students
+
+profiles-visitors:
   # Visiting Students
   - align: right
     image: mithushan.jpeg
     content: team_mithushan.md
     image_circular: false # crops the image to make it circular
     more_info: #
-  # 
+
+
   # Undergraduate Students
   # Past Members
+
 ---
+
+<br>
+## Past members
+---
+* Ma Yinhui (PhD student): advisor change in April 2024 to <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change

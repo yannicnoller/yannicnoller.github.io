@@ -56,7 +56,7 @@ nav_order: 2
 <li><a href="https://github.com/javapathfinder/jpf-core/wiki/Java-Pathfinder-Workshop-2022">JPF Workshop 2022</a> (Co-Organizer)</li>
 <li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2022</a> (Artifact Evaluation Committee Chair)</li>
 <li><a href="https://summerofcode.withgoogle.com/programs/2022/organizations/the-jpf-team">Google Summer of Code (GSoC) 2022</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
-<li><a href="https://summerofcode.withgoogle.com/archive/2021/organizations/5712237452328960">Google Summer of Code (GSoC) 2021</a> Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a></li>
+<li><a href="https://summerofcode.withgoogle.com/archive/2021/organizations/5712237452328960">Google Summer of Code (GSoC) 2021</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
 <li><a href="http://www.ieee-scam.org/2021">SCAM 2021</a> (NIER Track co-chair)</li>
 <li><a href="https://a-test.org/">A-TEST 2020</a> (Online Tutorials Session Chair)</li>
 </ul>
