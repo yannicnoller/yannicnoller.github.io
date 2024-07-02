@@ -118,8 +118,14 @@ Advisor: <a href="https://www.iste.uni-stuttgart.de/institute/team/Bogicevic/">D
 <ul>
 
 <li>
+<strong>Professor (Tenure-Track W2 to W3)</strong><br>
+Jul 2024 - present, <strong>Ruhr University Bochum</strong>, Germany
+</li>
+<br>
+
+<li>
 <strong>Assistant Professor (Tenure-Track)</strong><br>
-Aug 2023 - present, <strong>Singapore University of Technology and Design</strong>, Singapore
+Aug 2023 - May 2024, <strong>Singapore University of Technology and Design</strong>, Singapore
 </li>
 <br>
 

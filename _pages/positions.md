@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /positions/
-title: Open Positions
-nav: false
+title: Positions
+nav: true
 nav_order: 4
 toc:
 sidebar: false
