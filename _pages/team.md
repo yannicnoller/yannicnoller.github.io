@@ -69,6 +69,6 @@ profiles-external:
 <br>
 ## Past members
 ---
-* He Haolan (Research Assistant, SUTD): moved to industry
-* K. Mithushan (Visiting Student, SUTD): December 2023 - May 2024, University of Moratuwa, Sri Lanka
-* Ma Yinhui (PhD student, SUTD): advisor change in March 2024 to <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change
+* He Haolan (Research Assistant, SUTD): Sep 2023 - May 2024, moved to industry
+* K. Mithushan (Visiting Student, SUTD): Dec 2023 - May 2024, University of Moratuwa, Sri Lanka
+* Ma Yinhui (PhD student, SUTD): Jan 2024 - Mar 2024, advisor change <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change

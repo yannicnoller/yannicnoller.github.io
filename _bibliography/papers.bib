@@ -3,6 +3,30 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{tosem24,
+  title = {Timing Side-Channel Mitigation via Automated Program Repair},
+  journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},
+  year = {2024},
+  author = {Haifeng Ruan and Yannic Noller and Saeid Tizpaz-Niari and Sudipta Chattopadhyay and Abhik Roychoudhury},
+  keywords = {side-channel vulnerability, program repair, software engineering},
+  abstract = {Side-channel vulnerability detection has gained prominence recently due to Spectre and Meltdown attacks. Techniques for side-channel detection range from fuzz testing to program analysis and program composition. Existing side-channel mitigation techniques repair the vulnerability at the IR/binary level or use runtime monitoring solutions. In both cases, the source code itself is not modified, can evolve while keeping the vulnerability, and the developer would get no feedback on how to develop secure applications in the first place. Thus, these solutions do not help the developer understand the side-channel risks in her code and do not provide guidance to avoid code patterns with side-channel risks. In this paper, we present Pendulum, the first approach for automatically locating and repairing side-channel vulnerabilities in the source code, specifically for timing side channels. Our approach uses a quantitative estimation of found vulnerabilities to guide the fix localization, which goes hand-in-hand with a pattern-guided repair. Our evaluation shows that Pendulum can repair a large number of side-channel vulnerabilities in real-world applications. Overall, our approach integrates vulnerability detection, quantization, localization, and repair into one unified process. This also enhances the possibility of our side-channel mitigation approach being adopted into programming environments.},
+  pdf={tosem2024_pendulum.pdf},
+  abbr={TOSEM}
+}
+
+@article{kim2024codexity,
+  title={Codexity: Secure AI-assisted Code Generation},
+  author={Sung Yong Kim and Zhiyu Fan and Yannic Noller and Abhik Roychoudhury},
+  journal={arXiv preprint arXiv:2405.03927},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2405.03927},
+  bibtex_show={true},
+  doi={https://doi.org/10.48550/arXiv.2405.03927},
+  abbr={Preprint},
+  abstract={Despite the impressive performance of Large Language Models (LLMs) in software development activities, recent studies show the concern of introducing vulnerabilities into software codebase by AI programming assistants (e.g., Copilot, CodeWhisperer). In this work, we present Codexity, a security-focused code generation framework integrated with five LLMs. Codexity leverages the feedback of static analysis tools such as Infer and CppCheck to mitigate security vulnerabilities in LLM-generated programs. Our evaluation in a real-world benchmark with 751 automatically generated vulnerable subjects demonstrates Codexity can prevent 60% of the vulnerabilities being exposed to the software developer.},
+  html={https://arxiv.org/abs/2405.03927},
+}
+
 @INPROCEEDINGS{aprcomp2024,
   title={Program Repair Competition 2024},
   author={Shariffdeen, Ridwan and Noller, Yannic and Mirchev, Martin and Ruan, Haifeng and Gao, Xiang and Costea, Andreea and Duck, Gregory J. and Roychoudhury, Abhik},
