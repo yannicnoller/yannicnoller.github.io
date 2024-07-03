@@ -7,6 +7,32 @@ nav: true
 nav_order: 3
 ---
 
+#### Thesis/Project Topics
+---
+→ Check our available [thesis and project topics](../topics)!
+
+<br>
+#### Winter Semester 2024/2025
+---
+TBA
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+# Archive
+
+<br>
+#### Ruhr University of Bochum
+---
+TBA
+
+<br>
 #### Singapore University of Technology and Design
 ---
 
