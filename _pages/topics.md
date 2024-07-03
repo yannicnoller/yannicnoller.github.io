@@ -9,10 +9,10 @@ nav_order: 3
 
 #### Study Projects
 ---
-TBA
+* JUnit meets APR: Development of a JUnit Extension for Automated Program Repair
 
 <br>
 #### Bachelor/Master Thesis Topics
 ---
-* Testing the oracle: Identify weaknesses and bugs in sanitizers [[pdf]](/assets/pdf/2024_08_thesis_SanitizerTesting.pdf)
-* SymCC for Java: Symbolic execution via Java bytecode instrumentation [[pdf]](/assets/pdf/2024_08_thesis_SymCCJava.pdf)
+* [Testing the oracle: Identify weaknesses and bugs in sanitizers](/assets/pdf/2024_07_thesis_SanitizerTesting.pdf)
+* [SymCC for Java: Symbolic execution via Java bytecode instrumentation](/assets/pdf/2024_07_thesis_SymCCJava.pdf)
