@@ -9,7 +9,7 @@ nav_order: 3
 
 #### Study Projects
 ---
-* JUnit meets APR: Development of a JUnit Extension for Automated Program Repair
+* [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
 
 <br>
 #### Bachelor/Master Thesis Topics

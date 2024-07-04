@@ -67,7 +67,7 @@ profiles-external:
 ---
 
 <br>
-## Past members
+## Former Members
 ---
 * He Haolan (Research Assistant, SUTD): Sep 2023 - May 2024, moved to industry
 * K. Mithushan (Visiting Student, SUTD): Dec 2023 - May 2024, University of Moratuwa, Sri Lanka
