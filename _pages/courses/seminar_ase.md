@@ -15,6 +15,8 @@ toc:
 | Contact Hours: | 2 SWS |
 | Credits: | 3 CP |
 | Language: | English |
+| eCampus: | [212138](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0x77FFB115CCE24316A79F076D543B02A5&from=&tabID=1&tguid=0x5980070F0C7A42899012ACFE7660AC4B&objgguid=NEW&lang=de) | 
+| Moodle: | TBA |
 
 ---
 
@@ -55,7 +57,7 @@ Research seminar, i.e., we meet weekly in small group of students and the instru
 ### Requirements for the awarding of the credit points
 ---
 * Active participation in all presence events
-* 60-second-talk incl. feedback
+* 60-seconds-talk incl. feedback
 * Submission of the talk outline and the table of contents for the paper
 * Submission of the paper for peer-review
 * Review for at least two other student papers 
@@ -71,6 +73,11 @@ This seminar can be integrated in all current study programs (Bachelor/Master) a
 ### Recommended Literature and Material
 ---
 More information are available in our Moodle course: TBA
+
+<br>
+### Registration
+---
+Up to 15 students can participate in the seminar. To get a place in the seminar you have to write an eMail to yannic.noller@rub.de until 08.09.24, where you have to state the study program you are enrolled in. You will receive feedback by 16.09.24 as to whether you have been accepted. You must also register for the associated examination in Flexnow by the deadline. Information on the deadlines can be found on the website of the Examinations Office of the Faculty of Computer Science.
 
 <br>
 ### Timeline for WS24/25
