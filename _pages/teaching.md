@@ -15,7 +15,7 @@ nav_order: 3
 #### Winter Semester 2024/2025 @ Ruhr University of Bochum
 ---
 * Lecture: [212000 - Software Engineering](https://se.ruhr-uni-bochum.de/lecture-software-engineering/) (in collaboration with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
-* Seminar: [Automated Software Engineering](./courses/ase)
+* Seminar: [Automated Software Engineering](./courses/seminar-ase)
 * Study Project: [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
 
 → Check our available [thesis and project topics](../topics)!
