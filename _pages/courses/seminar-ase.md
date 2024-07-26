@@ -16,7 +16,8 @@ toc:
 | Credits: | 3 CP |
 | Language: | English |
 | eCampus: | [212138](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0x77FFB115CCE24316A79F076D543B02A5&from=&tabID=1&tguid=0x5980070F0C7A42899012ACFE7660AC4B&objgguid=NEW&lang=de) | 
-| Moodle: | TBA |
+| Moodle: | [https://moodle.ruhr-uni-bochum.de/course/view.php?id=59670](https://moodle.ruhr-uni-bochum.de/course/view.php?id=59670) |
+| Weekly Meeting: | Wed, 10:00 - 12:00, MC 4/112 |
 
 ---
 
@@ -64,23 +65,27 @@ Research seminar, i.e., we meet weekly in small group of students and the instru
 * Final presentation
 * Final paper submission (10+2 pages, two columns, template provided)
 
+You can find more information on [eCampus](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0x77FFB115CCE24316A79F076D543B02A5&from=&tabID=1&tguid=0x5980070F0C7A42899012ACFE7660AC4B&objgguid=NEW&lang=de)!
+
+<!--
 <br>
 ### Study Program
 ---
 This seminar can be integrated in all current study programs (Bachelor/Master) at the faculty of computer science.
+-->
 
 <br>
 ### Recommended Literature and Material
 ---
-More information are available in our Moodle course: TBA
+More information are available in our [Moodle Course](https://moodle.ruhr-uni-bochum.de/course/view.php?id=59670)!
 
 <br>
 ### Registration
 ---
-Up to 15 students can participate in the seminar. To get a place in the seminar you have to write an eMail to yannic.noller@rub.de until 08.09.24, where you have to state the study program you are enrolled in. You will receive feedback by 16.09.24 as to whether you have been accepted. You must also register for the associated examination in Flexnow by the deadline. Information on the deadlines can be found on the website of the Examinations Office of the Faculty of Computer Science.
+See information on [eCampus](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0x77FFB115CCE24316A79F076D543B02A5&from=&tabID=1&tguid=0x5980070F0C7A42899012ACFE7660AC4B&objgguid=NEW&lang=de)!
 
 <br>
 ### Timeline for WS24/25
 ---
-TBA
+See [Moodle Course](https://moodle.ruhr-uni-bochum.de/course/view.php?id=59670)!
 

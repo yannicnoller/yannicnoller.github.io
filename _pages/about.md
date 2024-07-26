@@ -33,7 +33,8 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 > UPDATE: I recently joined the [Ruhr-University Bochum](https://informatik.rub.de/en/)! I will [hire PhD students](./positions) for my new group, let me know if you want to work with me!
 
-Yannic ([CV](./cv)) is a professor at the faculty of computer science at the <a href="https://informatik.rub.de/en/">Ruhr University Bochum (RUB)</a> and leads the chair for Software Quality. His research focuses on how software quality can be maintained and improved with automated testing and repair technologies. The general research goal is to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems.
+
+Yannic ([CV](./cv)) is a professor at the [Faculty of Computer Science](https://informatik.rub.de/en/) at the [Ruhr University Bochum (RUB)](https://informatik.rub.de/en/) and leads the chair for [Software Quality](https://informatik.rub.de/en/research/chairs/sq/). His research focuses on how software quality can be maintained and improved with automated testing and repair technologies. His general research goal is to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems. 
 In particular, he works in the following areas:
 
 <img title="Research Topics" alt="Research Topics" src="/assets/img/ResearchIntro_Yannic.jpg" width="350px" style="display: block; margin-left: auto;  margin-right: auto;"/>
@@ -45,5 +46,4 @@ In particular, he works in the following areas:
 5. **Human Factors in SE**: studying developer needs and requirements for successful deployment of testing and repair techniques in development practice
 
 
-
-His Ph.D. work focused on differential software testing, in particular, by combining fuzzing and symbolic execution in the context of regression analysis, algorithmic complexity analysis, side-channel analysis, and robustness analysis of neural networks.
+Before joining RUB in July 2024, Yannic was an *Assistant Professor* at [Singapore University of Technology and Design (SUTD)](https://sutd.edu.sg/) and a *Research Assistant Professor* in the Department of Computer Science at the [National University of Singapore (NUS)](http://www.nus.edu.sg/). He pursued his Ph.D. in Computer Science in the Software Engineering group (advised by [Prof. Lars Grunske](https://www.informatik.hu-berlin.de/de/Members/lars-grunske)) at the [Humboldt-Universität zu Berlin](https://www.hu-berlin.de/en), Germany. His Ph.D. research focused on differential software testing, in particular, by combining fuzzing and symbolic execution in the context of regression analysis, algorithmic complexity analysis, side-channel analysis, and robustness analysis of neural networks.
