@@ -14,10 +14,8 @@ nav_order: 2
 <ul>
 
 <li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
-<li>PC member for the International Conference of Software Engineering (ICSE) 2025</li>
-<li>PC member for the International Symposium on Software Testing and Analysis (ISSTA) 2024</li>
-<li>Poster Track committee member for FSE 2024</li>
-<li>Tool Demonstrations Track committee member for ISSTA 2024</li>
+
+<li>PC member for the <a href="https://conf.researchr.org/home/icse-2025">International Conference of Software Engineering (ICSE) 2025</a></li>
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a></li>
 
@@ -66,10 +64,9 @@ nav_order: 2
 <ul>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
-<li>Poster Track, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
-<li>Tool Demonstrations Track, ISSTA 2024</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022</li>
-<li>Poster Track, <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a></li>
+<li>Poster Track: <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
+<li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a></li>
 </ul>
 
 <br>
