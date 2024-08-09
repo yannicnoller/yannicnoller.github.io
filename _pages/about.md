@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Professor for Software Quality, <a href="https://informatik.rub.de/en/">Ruhr University Bochum (RUB)</a>
+subtitle: Professor for Computer Science, <a href="https://informatik.rub.de/en/">Ruhr University Bochum (RUB)</a>
 
 profile:
   align: right
