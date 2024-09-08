@@ -34,7 +34,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 > UPDATE: I recently joined the [Ruhr-University Bochum](https://informatik.rub.de/en/)! I will [hire PhD students](./positions) for my new group, let me know if you want to work with me!
 
 
-Yannic ([CV](./cv)) is a professor at the [Faculty of Computer Science](https://informatik.rub.de/en/) at the [Ruhr University Bochum (RUB)](https://informatik.rub.de/en/) and leads the chair for [Software Quality](https://informatik.rub.de/en/research/chairs/sq/). His research focuses on how software quality can be maintained and improved with automated testing and repair technologies. His general research goal is to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems. 
+Yannic ([CV](./cv)) is a professor at the [Faculty of Computer Science](https://informatik.rub.de/en/) at the [Ruhr University Bochum (RUB)](https://informatik.rub.de/en/) and leads the [Software Quality](https://informatik.rub.de/en/research/chairs/sq/) group. His research focuses on how software quality can be maintained and improved with automated testing and repair technologies. His general research goal is to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems. 
 In particular, he works in the following areas:
 
 <img title="Research Topics" alt="Research Topics" src="/assets/img/ResearchIntro_Yannic.jpg" width="350px" style="display: block; margin-left: auto;  margin-right: auto;"/>

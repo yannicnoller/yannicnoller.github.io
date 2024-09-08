@@ -79,7 +79,7 @@ nav_order: 2
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
 <li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021 and 2024</li>
 <li>Journal of Systems and Software (<a href="https://www.journals.elsevier.com/journal-of-systems-and-software">JSS</a>) in 2021</li>
-<li>Journal of Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>) in 2019</li>
+<li>Journal of Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>) in 2019 and 2024</li>
 <li>Journal of Automated Software Engineering (<a href="https://link.springer.com/journal/10515">AUSE</a>) in 2019</li>
 </ul>
 
