@@ -13,9 +13,11 @@ nav_order: 2
 
 <ul>
 
-<li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
+<li>Proceedings Co-Chair for the <a href="https://conf.researchr.org/home/ase-2025">IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025</a></li>
 
-<li>PC member for the <a href="https://conf.researchr.org/home/icse-2025">International Conference of Software Engineering (ICSE) 2025</a></li>
+<li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
+
+<li>PC member for the <a href="https://conf.researchr.org/home/icse-2025">IEEE/ACM International Conference of Software Engineering (ICSE) 2025</a></li>
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a></li>
 
@@ -46,6 +48,7 @@ nav_order: 2
 <br>
 <h3>Organisation</h3>
 <ul>
+<li><a href="https://conf.researchr.org/home/ase-2025">ASE 2025</a> (Proceedings Co-Chair)</li>
 <li><a href="https://conf.researchr.org/home/issta-2025">ISSTA 2025</a> (Publicity Co-Chair)</li>
 <li><a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a> (Organizing Committee)</li>
 <li><a href="https://summerofcode.withgoogle.com/programs/2024/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2024</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
