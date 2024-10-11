@@ -15,6 +15,14 @@ profiles-faculty:
     role: faculty
     more_info: #
 
+profiles-admin:
+  # Team Assistant
+  - align: right
+    image: unknown.jpg
+    content: team_claudia.md
+    image_circular: false # crops the image to make it circular
+    more_info: #
+
 profiles-staff:
   # Research Staff
   # - align: right
@@ -49,7 +57,7 @@ profiles-visitors:
 profiles-external:
   # External Members
   - align: right
-    image: srinidhi.jpg
+    image: srinidhi.jpeg
     content: team_srinidhi.md
     image_circular: false # crops the image to make it circular
     more_info: #
