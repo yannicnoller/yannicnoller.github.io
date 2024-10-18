@@ -12,13 +12,15 @@ nav_order: 3
 → Check our available [thesis and project topics](../topics)!
 
 <br>-->
+
+> Check our available [thesis and project topics](../topics)!
+
+
 #### Winter Semester 2024/2025 @ Ruhr University of Bochum
 ---
 * Lecture: [212000 - Software Engineering](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?objgguid=NEW&from=vvz&gguid=0x9A68AF2D47BD4F389F878110A6C4D911&mode=own&tguid=0x5980070F0C7A42899012ACFE7660AC4B&lang=de) (in collaboration with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
 * Seminar: [212138 - Automated Software Engineering](./courses/seminar-ase)
 * Study Project: [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
-
-→ Check our available [thesis and project topics](../topics)!
 
 
 <br>

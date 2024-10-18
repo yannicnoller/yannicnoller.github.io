@@ -31,7 +31,8 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 <!-- Yannic Noller is an Assistant Professor at the Singapore University of Technology and Design (SUTD), where he leads the Software Engineering research group. His current research focuses on software testing, automated program repair, machine learning analysis, intelligent tutoring systems, and human factors in SE. Before joining SUTD in 2023, Yannic was a Research Assistant Professor in the Department of Computer Science at the National University of Singapore (NUS) and served as the Assistant Director of the Ministry of Education (MoE) Tier 3 program on Automated Program Repair. He pursued his Ph.D. in Computer Science in the Software Engineering group (Prof. Lars Grunske) at the Humboldt-Universität zu Berlin, Germany. -->
 
-> UPDATE: I recently joined the [Ruhr-University Bochum](https://informatik.rub.de/en/)! I will [hire PhD students](./positions) for my new group, let me know if you want to work with me!
+<!-- > UPDATES:<br> I recently joined the [Ruhr-University Bochum](https://informatik.rub.de/en/)! I will [hire PhD students](./positions) for my new group, let me know if you want to work with me! -->
+> If you want to write your bachelor/master thesis with us, check our [available topics](../topics)!
 
 
 Yannic ([CV](./cv)) is a professor at the [Faculty of Computer Science](https://informatik.rub.de/en/) at the [Ruhr University Bochum (RUB)](https://informatik.rub.de/en/) and leads the [Software Quality](https://informatik.rub.de/en/research/chairs/sq/) group. His research focuses on how software quality can be maintained and improved with automated testing and repair technologies. His general research goal is to shape the future of software development by contributing to the domain of automated software engineering and providing the means to develop reliable, trustworthy, and secure software systems. 

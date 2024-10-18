@@ -8,7 +8,7 @@ toc:
 sidebar: false
 ---
 
-> Two open PhD (m,f,x) positions! Application Deadline: **30/09/2024**
+<!-- Two open PhD (m,f,x) positions! Application Deadline: **30/09/2024** -->
 
 I am looking for **PhD students** to build my new research group at the [Ruhr-University Bochum](https://informatik.rub.de/en/) (RUB)! In general, we aim to both have a practical impact by designing principled and fundamental approaches and by creating relevant and usable tools.
 
@@ -37,9 +37,12 @@ An ideal candidate has some of the following qualities:
 
 It is not expected that you have all of these qualities; I am unsure whether I have all of them myself. However, keep in consideration that these qualities reflect ways in which you will likely be challenged and develop further if you decide to join my research group.
 
+<!--
 **The official position description can be found here: [https://jobs.ruhr-uni-bochum.de](https://jobs.ruhr-uni-bochum.de/jobposting/89a7fb6d8ba0603cd6995cc35872c83ee4e04dcc0?ref=homepage).**
 
-> If you are interested in a position, please send your application with the subject "ANR: 3701" until **30/09/2024** by e-mail to the following address: [sq-office@rub.de](mailto:sq-office@rub.de)! Please attach your CV, transcripts, and a statement about your research experience and interest.
+ > If you are interested in a position, please send your application with the subject "ANR: 3701" until **30/09/2024** by e-mail to the following address: [sq-office@rub.de](mailto:sq-office@rub.de)! Please attach your CV, transcripts, and a statement about your research experience and interest. -->
+
+If you are interested in a position, please send your application by e-mail to the following address: [sq-office@rub.de](mailto:sq-office@rub.de)! Please attach your CV, transcripts, and a statement about your research experience and interest.
 
 <!--
 If you are interested in a position, feel free to [contact me](mailto:yannic.noller@acm.org). Please attach your CV and a statement about your research experience and interest. For now, there is no particular deadline! I will join the RUB in July 2024 and will fill the positions as soon as possible.
