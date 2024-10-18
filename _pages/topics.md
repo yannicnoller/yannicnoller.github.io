@@ -14,6 +14,9 @@ nav_order: 3
 <br>
 #### Bachelor/Master Thesis Topics
 ---
-* [Automated Extraction of Test Oracles with Large Language Models](/assets/pdf/2024_10_thesis_LLMOracleExtraction.pdf)
+
+If you are interested in one of these topics, please send an email to [sq-office@rub.de](mailto:sq-office@rub.de) and include the following documents: CV, a statement about your motivation for the chosen topic or your area of interest, and your transcripts with the overview of your current grades.
+
+* **(new!)** [Automated Extraction of Test Oracles with Large Language Models](/assets/pdf/2024_10_thesis_LLMOracleExtraction.pdf)
 * [Testing the oracle: Identify weaknesses and bugs in sanitizers](/assets/pdf/2024_07_thesis_SanitizerTesting.pdf)
 * [SymCC for Java: Symbolic execution via Java bytecode instrumentation](/assets/pdf/2024_07_thesis_SymCCJava.pdf)
