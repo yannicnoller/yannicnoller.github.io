@@ -69,16 +69,16 @@ nav_order: 2
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022</li>
 <li>Poster Track: <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
-<li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a></li>
+<li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a>, <a href="https://conf.researchr.org/track/fse-2025/fse-2025-demonstrations">FSE 2025</a></li>
 </ul>
 
 <br>
 <h3>Journal Reviewing</h3>
 <ul>
-<li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023-2024</li>
-<li>Communications of the ACM (<a href="https://cacm.acm.org">CACM</a>) in 2023</li>
 <li>since 2020: Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 <!-- <li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li> -->
+<li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023-2024</li>
+<li>Communications of the ACM (<a href="https://cacm.acm.org">CACM</a>) in 2023</li>
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
 <li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021 and 2024</li>
 <li>Journal of Systems and Software (<a href="https://www.journals.elsevier.com/journal-of-systems-and-software">JSS</a>) in 2021</li>
