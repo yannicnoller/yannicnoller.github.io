@@ -16,12 +16,21 @@ nav_order: 3
 > Check our available [thesis and project topics](../topics)!
 
 
-#### Winter Semester 2024/2025 @ Ruhr University of Bochum
+#### Ruhr University of Bochum
 ---
-* Lecture: [212000 - Software Engineering](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?objgguid=NEW&from=vvz&gguid=0x9A68AF2D47BD4F389F878110A6C4D911&mode=own&tguid=0x5980070F0C7A42899012ACFE7660AC4B&lang=de) (in collaboration with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
-* Seminar: [212138 - Automated Software Engineering](./courses/seminar-ase)
-* Study Project: [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
 
+* Summer Semester 2025 (currently in planning)
+   * Lecture: Advanced Automatic Testing (with [Prof. Toffalini](https://flaviotoffalini.info/))
+   * Lecture: Programmierung und Programmiersprachen (with [Prof. Jansen](https://nilsjansen.org/))
+   * Seminar: [212138 - Automated Software Engineering](./courses/seminar-ase)
+   * Colloquium: [212165 - Software Engineering Research Colloquium](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xDCCA9BE876CF467BBF7691EAB1581A9E) (with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
+   * Study Project: TBA
+
+* Winter Semester 2024/2025
+   * Lecture: [212000 - Software Engineering](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0x9A68AF2D47BD4F389F878110A6C4D911) (with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
+   * Seminar: [212138 - Automated Software Engineering](./courses/seminar-ase)
+   * Colloquium: [212165 - Software Engineering Research Colloquium](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xDCCA9BE876CF467BBF7691EAB1581A9E) (with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
+   * Study Project: [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
 
 <br>
 <br>
