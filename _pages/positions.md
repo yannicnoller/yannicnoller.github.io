@@ -2,7 +2,7 @@
 layout: page
 permalink: /positions/
 title: Positions
-nav: true
+nav: false
 nav_order: 4
 toc:
 sidebar: false

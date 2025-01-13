@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /team/
 title: Team
-description: # We are actively hiring PhD students, let us know if you want to work with us!
+description: Let us know if you want to work with us! # We are actively hiring PhD students, 
 nav: true
 nav_order: 4
 
