@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /team/
 title: Team
-description: We are actively hiring PhD students, let us know if you want to work with us!
+description: # We are actively hiring PhD students, let us know if you want to work with us!
 nav: true
 nav_order: 4
 
@@ -46,6 +46,19 @@ profiles-master:
 
 # PhD Students
 
+profiles-phd:
+  # PhD Students
+  - align: right
+    image: thiago.jpeg
+    content: team_thiago.md
+    image_circular: false # crops the image to make it circular
+    more_info: #
+  - align: right
+    image: samra.jpeg
+    content: team_samra.md
+    image_circular: false # crops the image to make it circular
+    more_info: #
+
 profiles-visitors:
   # Visiting Students
   # - align: right
@@ -56,11 +69,6 @@ profiles-visitors:
 
 profiles-external:
   # External Members
-  - align: right
-    image: srinidhi.jpeg
-    content: team_srinidhi.md
-    image_circular: false # crops the image to make it circular
-    more_info: #
   # Master Students
   - align: right
     image: abram.jpeg
@@ -77,6 +85,7 @@ profiles-external:
 <br>
 ## Former Members
 ---
+* [Srinidhi H C](https://github.com/sequentialrant) (Research Associate, SUTD): Dec 2023 - Dec 2024, moved to industry
 * He Haolan (Research Assistant, SUTD): Sep 2023 - May 2024, moved to industry
 * K. Mithushan (Visiting Student, SUTD): Dec 2023 - May 2024, University of Moratuwa, Sri Lanka
 * Ma Yinhui (PhD student, SUTD): Jan 2024 - Mar 2024, advisor change <a href="https://istd.sutd.edu.sg/people/faculty/angela-wang-bo/">Prof. Wang Bo</a> due to university change
