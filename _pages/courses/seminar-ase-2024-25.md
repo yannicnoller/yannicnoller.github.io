@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/courses/seminar-ase
+permalink: /teaching/courses/seminar-ase-2024-25
 title: "Seminar: Automated Software Engineering"
 nav: false
 nav_order: 4
