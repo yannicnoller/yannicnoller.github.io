@@ -21,9 +21,9 @@ nav_order: 2
 
 <li>PC member for the <a href="https://conf.researchr.org/home/ase-2025">IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025</a></li>
 
-<li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2024</a></li>
+<li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2025</a></li>
 
-<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2024</a></li>
+<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a></li>
 
 <li>Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 
@@ -51,6 +51,7 @@ nav_order: 2
 <h3>Organisation</h3>
 <ul>
 <li><a href="https://fuzzingworkshop.github.io/editions/2025">Fuzzing Workshop 2025</a> (Organizing Committee)</li>
+<li><a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
 <li><a href="https://conf.researchr.org/home/ase-2025">ASE 2025</a> (Proceedings Co-Chair)</li>
 <li><a href="https://conf.researchr.org/home/issta-2025">ISSTA 2025</a> (Publicity Co-Chair)</li>
 <li><a href="https://fuzzingworkshop.github.io/editions/2024/">Fuzzing Workshop 2024</a> (Organizing Committee)</li>
@@ -80,10 +81,10 @@ nav_order: 2
 <ul>
 <li>since 2020: Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 <!-- <li>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>) in 2020-2023</li> -->
+<li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021 and 2024-25</li>
 <li>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCICO</a>) in 2023-2024</li>
 <li>Communications of the ACM (<a href="https://cacm.acm.org">CACM</a>) in 2023</li>
 <li>IEEE Transactions on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858">TDSC</a>) in 2019, and 2021-2023</li>
-<li>IEEE Transactions on Software Engineering (<a href="https://www.computer.org/csdl/journal/ts">TSE</a>) in 2021 and 2024</li>
 <li>Journal of Systems and Software (<a href="https://www.journals.elsevier.com/journal-of-systems-and-software">JSS</a>) in 2021</li>
 <li>Journal of Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>) in 2019 and 2024</li>
 <li>Journal of Automated Software Engineering (<a href="https://link.springer.com/journal/10515">AUSE</a>) in 2019</li>
@@ -110,6 +111,8 @@ nav_order: 2
 <br>
 <h3>Mentoring</h3>
 <ul>
+
+<li>Bachelor Thesis, RUB, 2024, Oskar Wilke, "Exploring the Use of Large Language Models and Code Refactoring for Software Variability"</li>
 
 <li>Master Thesis, NUS, 2023, Sung Yong Kim, "Analysis on Large Language Model vulnerable code
 generation and self-repair ability"</li>
