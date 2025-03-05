@@ -19,7 +19,7 @@ profiles-admin:
   # Team Assistant
   - align: right
     image: unknown.jpg
-    content: team_claudia.md
+    content: team_sophie.md
     image_circular: false # crops the image to make it circular
     more_info: #
 
