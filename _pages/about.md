@@ -40,7 +40,7 @@ In particular, he works in the following areas:
 
 <!-- <img title="Research Topics" alt="Research Topics" src="/assets/img/ResearchIntro_Yannic.jpg" width="350px" style="display: block; margin-left: auto;  margin-right: auto;"/> -->
 
-1. **Automated Program Repair**: developing new repair techniques to aid developers in fixing program bugs
+1. **Automated Program Repair**: developing novel repair techniques to aid developers in fixing program bugs
 2. **Machine Learning Analysis**: automated analysis, testing, and repairing of machine learning models
 3. **Software Testing**: exploring and designing (hybrid) testing techniques to systematically generate test inputs that expose incorrect program behavior
 4. **Intelligent Tutoring Systems**: how to help CS students learn programming by applying concepts from automated testing and repair to guide the students toward the right solution
