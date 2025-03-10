@@ -17,7 +17,7 @@ toc:
 | Language: | English |
 | eCampus: | [212138](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xC87C43BE80CE423F9FE918115AB13665&from=vvz&mode=own&tabID=1&tguid=0x465D15D340584F31963F02CDAA33142A&objgguid=NEW&lang=de) | 
 | Moodle: | [https://moodle.ruhr-uni-bochum.de/course/view.php?id=63565](https://moodle.ruhr-uni-bochum.de/course/view.php?id=63565) |
-| Weekly Meeting: | Wed, 10:00 - 12:00, MC 4/112 |
+| Weekly Meeting: | (!) Tue, 12:00 - 14:00, MC 4/112 |
 
 ---
 
