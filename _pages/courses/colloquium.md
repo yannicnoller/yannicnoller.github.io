@@ -11,7 +11,7 @@ nav_order: 4
 | Lecturer: | [Prof. Dr. Thorsten Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/), [Prof. Dr. Yannic Noller](https://informatik.rub.de/ac-personen/yannic-noller/) |
 | Language: | English |
 | eCampus: | [212165](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xDCCA9BE876CF467BBF7691EAB1581A9E) | 
-| Weekly Meeting: | Wed, 11:40 - 12:30, MC 4.209/212 |
+| Weekly Meeting: | Wed, 11:30 - 13:00, MC 4.112 |
 
 ---
 
