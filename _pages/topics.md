@@ -19,7 +19,7 @@ If you are interested in one of topics below, please send an email to [sq-office
 <br>
 **Bachelor Thesis Topics**
 * [Benchmark Curation for APR in Software Testing Education](/assets/pdf/2024_10_thesis_APRTestEducation.pdf)
-* **(new!)** [Leverage LLM for Maintenance of Web Element Locators in Automated GUI Testing](/assets/pdf/2025_03_thesis_LLMLocatorFixes.pdf)
+* **(new!)** [Integrating Script-free Testing with the Playwright Framework](/assets/pdf/2025_04_thesis_SyncScriptFree.pdf)
 
 <br>
 **Bachelor/Master Thesis Topics:**
