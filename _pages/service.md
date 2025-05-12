@@ -25,7 +25,7 @@ nav_order: 2
 
 <li>Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
 
-<li>PC member for the <a href="https://conf.researchr.org/track/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
+<li>PC member for the <a href="https://conf.researchr.org/home/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
 
 </ul>
 
