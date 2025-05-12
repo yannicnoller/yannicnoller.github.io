@@ -19,6 +19,10 @@ nav_order: 3
 ### 2025
 ---
 
+<!-- 2025-05-15 -->
+* *Automated Program Repair for Security*<br>
+-- Invited Talk at the Charles University, May 2025, Prague (Czech Republic), Host: Pavel Parízek
+
 <!-- 2025-03-03 -->
 * *[Automated Program Repair for Security](/assets/pdf/2025_03_APR4Security.pdf)*<br>
 -- Invited Talk at the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), March 2025, Abu Dhabi (United Arab Emirates), Host: Youcheng Sun

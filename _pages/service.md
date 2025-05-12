@@ -17,8 +17,6 @@ nav_order: 2
 
 <li>Publicity Co-Chair for the <a href="https://conf.researchr.org/home/issta-2025">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2025</a></li>
 
-<li>PC member for the <a href="https://conf.researchr.org/home/icse-2025">IEEE/ACM International Conference of Software Engineering (ICSE) 2025</a></li>
-
 <li>PC member for the <a href="https://conf.researchr.org/home/ase-2025">IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025</a></li>
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzingworkshop.github.io">Fuzzing Workshop 2025</a></li>
@@ -26,6 +24,8 @@ nav_order: 2
 <li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a></li>
 
 <li>Member of ACM TOSEM Board of <a href="https://dl.acm.org/journal/tosem/distinguished-reviewers-board">Distinguished Reviewers</a></li>
+
+<li>PC member for the <a href="https://conf.researchr.org/track/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
 
 </ul>
 
@@ -69,6 +69,7 @@ nav_order: 2
 <br>
 <h3>Conference Committees</h3>
 <ul>
+<li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026</li>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022,2025</li>
@@ -107,6 +108,16 @@ nav_order: 2
 <a href="https://icse2017.gatech.edu">ICSE'2017</a>,
 <a href="http://ase-conferences.org/ase/past/ase2017/">ASE'2017</a>,
 <a href="http://ase-conferences.org/ase/past/ase2016/research.larc.smu.edu.sg/ase2016/home.html">ASE'2016</a>
+
+
+<br>
+<h3>Supervision of Researchers in Early Career Phases</h3>
+<ul>
+
+<li>will start in Jul 2025, PhD Student, RUB, Samra Mehboob, "TBD"</li>
+<li>Mar 2025 - present, PhD Student, RUB, Thiago Santos de Moura, "Neuro-Symbolic Testing and Repair"</li>
+<li>Jan 2024 - Apr 2024, PhD Student, SUTD, Ma Yinhui, <i>transferred advisor due to university change</i></li>
+</ul>
 
 <br>
 <h3>Mentoring</h3>

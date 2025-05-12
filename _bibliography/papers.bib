@@ -23,6 +23,7 @@
   booktitle={37th IEEE Conference on Software Engineering Education and Training (CSEE&T 2025), co-located with ICSE 2025.}, 
   year={2025},
   abbr={CSEE&T'25},
+  selected={true},
   abstract={The growing number of students enrolling in Computer Science (CS) programmes is pushing CS educators to their limits. This poses significant challenges to computing education, particularly the teaching of introductory programming and advanced software engineering (SE) courses. First-year programming courses often face overwhelming enrollments, including interdisciplinary students who are not CS majors. The high teacher-to-student ratio makes it challenging to provide timely and high-quality feedback. Meanwhile, software engineering education comes with inherent difficulties like acquiring industry partners and the dilemma that such software projects are often under or over-specified and one-time efforts within one team or one course. To address these challenges, we designed a novel foundational SE course. This SE course envisions building a full-fledged Intelligent Tutoring System (ITS) of Programming Assignments to provide automated, real-time feedback for novice students in programming courses over multiple years. Each year, SE students contribute to specific short-running SE projects that improve the existing ITS implementation, while at the same time, we can deploy the ITS for usage by students for learning programming. This project setup builds awareness among SE students about their contribution to a ``to–be–deployed" software project. In this multi-year teaching effort, we have incrementally built an ITS that is now deployed in various programming courses. This paper discusses the Intelligent Tutoring System architecture, our teaching concept in the SE course, our experience with the built ITS, and our view of future computing education.},
   pdf={cseet2025_its_preprint.pdf},
 }
@@ -37,6 +38,7 @@
   abstract = {Security vulnerabilities detected via techniques like greybox fuzzing are often fixed with a significant time lag. This increases the exposure of the software to vulnerabilities. Automated fixing of vulnerabilities where a tool can generate fix suggestions is thus of value. In this work, we present such a tool, called CrashRepair, to automatically generate fix suggestions using concolic execution, specification inference, and search techniques. Our approach avoids generating fix suggestions merely at the crash location because such fixes often disable the manifestation of the error instead of fixing the error. Instead, based on sanitizer-guided concolic execution, we infer desired constraints at specific program locations and then opportunistically search for code mutations that help respect those constraints. Our technique only requires a single detected vulnerability or exploit as input; it does not require any user-provided properties. Evaluation results on a wide variety of CVEs in the VulnLoc benchmark, show CrashRepair achieves greater efficacy than state-of-the-art vulnerability repair tools like Senx. The repairs suggested come in the form of a ranked set of patches at different locations, and we show that on most occasions, the desired fix is among the top-3 fixes reported by CrashRepair.},
   pdf={tosem2025_crashrepair.pdf},
   abbr={TOSEM'25},
+  selected={true},
   bibtex_show={true},
 }
 
@@ -124,6 +126,7 @@
   volume={},
   number={},
   pages={105-116},
+  selected={true},
   abstract={Automated program repair (APR) allows for autonomous software protection and improvement. Many proposed repair techniques rely on available test suites, since tests are available in real-world settings. Tests are incomplete specifications, however. As a result, repairs generated based on tests may suffer from the test overfitting problem. The patches produced by APR techniques may pass the given tests and thus be plausible, and yet be an incorrect patch. This hints towards more extensive test suites to guide program repair. 
 
 Generating additional tests to improve the test suite quality is generally difficult because the oracle or expected observable behavior of the generated tests is unknown. In our work, we first construct additional oracles by instrumenting buggy programs from the Defects4J benchmark with the knowledge obtained from the available bug reports. Then, we formulate a coevolution approach that generates tests and repairs in a unified workflow.
@@ -279,7 +282,6 @@ html={https://doi.org/10.1145/3607538},
   location = {Virtual, Denmark},
   series = {ISSTA 2021},
   pdf={issta2021_noller_qfuzz.pdf},
-  selected={true},
   bibtex_show={true},
   abbr={ISSTA'21},
   slides={issta2021_noller_qfuzz_slides.pdf},
@@ -520,7 +522,6 @@ html={https://doi.org/10.1145/3238147.3241537},
   location = {Amsterdam, Netherlands},
   series = {ISSTA 2018},
   pdf={issta2018_noller_badger.pdf},
-  selected={true},
   bibtex_show={true},
   abbr={ISSTA'18},
   html={https://dl.acm.org/doi/10.1145/3213846.3213868},
