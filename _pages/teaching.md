@@ -19,7 +19,12 @@ nav_order: 4
 #### Ruhr University of Bochum
 ---
 
-* Summer Semester 2025 (currently in planning)
+* Winter Semester 2025/2026 (currently in planning)
+	*  Lecture: Software Engineering (with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
+   * Seminar: Automated Software Engineering
+   * Research Seminar (Oberseminar): Software Quality
+   * Study Project: TBA
+* Summer Semester 2025
    * Lecture: [211067 - Advanced Automatic Testing](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xF202047D59824A7DAD31C11AA4AE8090) (with [Prof. Toffalini](https://flaviotoffalini.info/))
    * Lecture: [211053 - Programmierung und Programmiersprachen](https://vvz.ruhr-uni-bochum.de/campus/all/event.asp?gguid=0xD25FC8F0E1394B58A957C84A759ECFDF) (with [Prof. Jansen](https://nilsjansen.org/))
    * Seminar: [212138 - Automated Software Engineering](./courses/seminar-ase-2025)
