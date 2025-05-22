@@ -19,6 +19,10 @@ nav_order: 3
 ### 2025
 ---
 
+<!-- 2025-05-21 -->
+* *[(Postdoctoral) Research in Singapore](/assets/pdf/2025_05_21_crnet_singapore-public.pdf)*<br>
+-- Invited Talk at the workshop and networking event ["Doing research in (Greater) China"](https://www.cnetrnr.de/veranstaltungen/one-day-workshop-and-networking-event-for-stem-early-career-researchers-doing-research-in-greater-china/) organized by the [C NET RNR](https://www.cnetrnr.de/), May 2025, University Duisburg-Essen
+
 <!-- 2025-05-15 -->
 * *Automated Program Repair for Security*<br>
 -- Invited Talk at the Charles University, May 2025, Prague (Czech Republic), Host: Pavel Parízek
