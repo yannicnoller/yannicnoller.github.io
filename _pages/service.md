@@ -27,6 +27,8 @@ nav_order: 2
 
 <li>PC member for the <a href="https://conf.researchr.org/home/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
 
+<li>Artifact Evaluation Chair for the <a href="https://etaps.org/about/fase/">International Conference on Fundamental Approaches to Software Engineering (FASE) 2026</a></li>
+
 </ul>
 
 
@@ -50,6 +52,8 @@ nav_order: 2
 <br>
 <h3>Organisation</h3>
 <ul>
+
+<li> <a href="https://etaps.org/about/fase/">FASE 2026</a> (Artifact Evaluation Chair)</li>
 <li><a href="https://fuzzingworkshop.github.io/editions/2025">Fuzzing Workshop 2025</a> (Organizing Committee)</li>
 <li><a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>)</li>
 <li><a href="https://conf.researchr.org/home/ase-2025">ASE 2025</a> (Proceedings Co-Chair)</li>
