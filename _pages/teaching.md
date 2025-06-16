@@ -20,7 +20,7 @@ nav_order: 4
 ---
 
 * Winter Semester 2025/2026 (currently in planning)
-	*  Lecture: Software Engineering (with [Prof. Berger](https://se.ruhr-uni-bochum.de/thorsten-berger/))
+	* Lecture: Software Engineering
    * Seminar: Automated Software Engineering
    * Research Seminar (Oberseminar): Software Quality
    * Study Project: TBA
