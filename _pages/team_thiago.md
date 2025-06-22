@@ -1,4 +1,4 @@
-### [Thiago Santos de Moura](http://www.linkedin.com/in/mourats)
+#### [Thiago Santos de Moura](http://www.linkedin.com/in/mourats)
 *PhD Student*
 
 * joined in March 2025

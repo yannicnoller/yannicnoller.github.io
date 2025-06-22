@@ -1,4 +1,4 @@
-### [Yannic Noller](https://yannicnoller.github.io)
+#### [Yannic Noller](https://yannicnoller.github.io)
 *Professor*
 
 * joined RUB in July 2024
