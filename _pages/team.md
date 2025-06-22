@@ -61,30 +61,24 @@ profiles-phd:
 
 profiles-visitors:
   # Visiting Students
-  # - align: right
-  #   image: mithushan.jpeg
-  #   content: team_mithushan.md
-  #   image_circular: false # crops the image to make it circular
-  #   more_info: #
+  - align: right
+    image: ruixiang.jpg
+    content: team_ruixiang.md
+    image_circular: false # crops the image to make it circular
+    more_info: #
 
 profiles-external:
   # External Members
   # Master Students
-  - align: right
-    image: abram.jpeg
-    content: team_abram.md
-    image_circular: false # crops the image to make it circular
-    more_info: #
-
-
   # Undergraduate Students
   # Past Members
 
 ---
 
 <br>
-## Former Members
+## Former Members & Visitors
 ---
+* [Abram Tan Jia Han](https://abramtan.com/) (Master Student, SUTD): Jan 2024 - Apr 2025
 * [Srinidhi H C](https://github.com/sequentialrant) (Research Associate, SUTD): Dec 2023 - Dec 2024, moved to industry
 * He Haolan (Research Assistant, SUTD): Sep 2023 - May 2024, moved to industry
 * K. Mithushan (Visiting Student, SUTD): Dec 2023 - May 2024, University of Moratuwa, Sri Lanka

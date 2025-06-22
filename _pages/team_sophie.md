@@ -1,4 +1,4 @@
-### Sophie Poschmann
+#### Sophie Poschmann
 *Team Assistant*
 
 * joined in February 2025
