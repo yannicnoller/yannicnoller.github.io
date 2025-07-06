@@ -10,6 +10,9 @@ nav_order: 3
 #### Study Projects
 ---
 * past: [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair](/assets/pdf/2024_07_project_JUnitMeetsAPR.pdf)
+* upcoming for WS25/26:
+   * [JUnit meets APR: Development of a JUnit Extension for Automated Program Repair (v2)](/assets/pdf/studyproject_2025-26_JUnitMeetsAPR.pdf)
+   * [Language-agnostic Migration Assistant for Web GUI Tests](/assets/pdf/studyproject_2025-26_Script_Free_Framework.pdf)
 
 <br>
 #### Thesis Topics
