@@ -1,0 +1,12 @@
+@article{fan2023its,
+  title={Intelligent Tutoring System: Experience of Linking Software Engineering and Programming Teaching},
+  author={Fan, Zhiyu and Noller, Yannic and Dandekar, Ashish and Roychoudhury, Abhik},
+  journal={arXiv preprint arXiv:2310.05472},
+  year={2023},
+  pdf={https://arxiv.org/pdf/2310.05472.pdf},
+  bibtex_show={true},
+  doi={https://doi.org/10.48550/arXiv.2310.05472},
+  abbr={arXiv'23},
+  abstract={The increasing number of computer science students pushes lecturers and tutors of first-year programming courses to their limits to provide high-quality feedback to the students. Existing systems that handle automated grading primarily focus on the automation of test case executions in the context of programming assignments. However, they cannot provide customized feedback about the students' errors, and hence, cannot replace the help of tutors. While recent research works in the area of automated grading and feedback generation address this issue by using automated repair techniques, so far, to the best of our knowledge, there has been no real-world deployment of such techniques. Based on the research advances in recent years, we have built an intelligent tutoring system that has the capability of providing automated feedback and grading. Furthermore, we designed a Software Engineering course that guides third-year undergraduate students in incrementally developing such a system over the coming years. Each year, students will make contributions that improve the current implementation, while at the same time, we can deploy the current system for usage by first year students. This paper describes our teaching concept, the intelligent tutoring system architecture, and our experience with the stakeholders. This software engineering project for the students has the key advantage that the users of the system are available in-house (i.e., students, tutors, and lecturers from the first-year programming courses). This helps organize requirements engineering sessions and builds awareness about their contribution to a "to be deployed" software project. In this multi-year teaching effort, we have incrementally built a tutoring system that can be used in first-year programming courses. Further, it represents a platform that can integrate the latest research results in APR for education.},
+  html={https://arxiv.org/abs/2310.05472},
+}
