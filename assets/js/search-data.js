@@ -44,345 +44,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-symbolic-pathfinder-setup-gradle",
         
-          title: "a post with plotly.js",
+          title: "Symbolic PathFinder Setup (Gradle)",
         
-        description: "this is what included plotly.js code could look like",
+        description: "This post includes some valuable hints for building SPF with Gradle and some helpful advice for using it.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
+            window.location.href = "/blog/2023/spf-gradle/";
           
         },
-      },{id: "post-a-post-with-image-galleries",
+      },{id: "post-symbolic-pathfinder-setup-ant",
         
-          title: "a post with image galleries",
+          title: "Symbolic PathFinder Setup (Ant)",
         
-        description: "this is what included image galleries could look like",
+        description: "This post includes some valuable hints for building SPF with Ant and some helpful advice for using it.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/typograms/";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/post-citation/";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-a-post-with-redirect",
-        
-          title: "a post with redirect",
-        
-        description: "you can also redirect to assets like pdf",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/assets/pdf/example_pdf.pdf";
-          
-        },
-      },{id: "post-a-post-with-diagrams",
-        
-          title: "a post with diagrams",
-        
-        description: "an example of a blog post with diagrams",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/diagrams/";
-          
-        },
-      },{id: "post-a-distill-style-blog-post",
-        
-          title: "a distill-style blog post",
-        
-        description: "an example of a distill-style blog post and main elements",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/distill/";
-          
-        },
-      },{id: "post-a-post-with-twitter",
-        
-          title: "a post with twitter",
-        
-        description: "an example of a blog post with twitter",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2020/twitter/";
-          
-        },
-      },{id: "post-a-post-with-disqus-comments",
-        
-          title: "a post with disqus comments",
-        
-        description: "an example of a blog post with disqus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/disqus-comments/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
-          
-        },
-      },{id: "post-a-post-with-code",
-        
-          title: "a post with code",
-        
-        description: "an example of a blog post with some code",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/code/";
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/images/";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
+            window.location.href = "/blog/2022/spf-ant/";
           
         },
       },{id: "books-the-godfather",
@@ -390,16 +71,89 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-article-about-fuzzing-symbolic-execution-and-expert-guidance-for-better-testing-has-been-accepted-for-publication-in-ieee-software",
+          title: 'Our article about Fuzzing, Symbolic Execution, and Expert Guidance for Better Testing has...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-our-most-recent-work-on-program-repair-cerberus-a-fully-agnostic-repair-platform-has-been-accepted-for-the-tool-demonstrations-track-at-icse-2023-cerberus-currently-integrates-20-program-repair-tools-and-9-repair-benchmarks-across-multiple-target-languages-and-application-domains",
+          title: 'Our most recent work on program repair – Cerberus, a fully agnostic repair...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-attended-the-dagstuhl-seminar-on-software-bug-detection-challenges-and-synergies-it-was-great-to-discuss-with-so-many-experts-in-bug-detection",
+          title: 'I attended the Dagstuhl seminar on Software Bug Detection: Challenges and Synergies! It...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-on-the-program-committee-for-issta-2024-looking-forward-to-great-submissions-smile",
+          title: 'I have been invited to serve on the Program Committee for ISSTA 2024!...',
+          description: "",
+          section: "News",},{id: "news-icse-2023-happened-in-melbourne-great-conference-and-we-had-a-full-day-at-the-main-conference-filled-with-discussions-and-talks-about-automated-program-repair",
+          title: 'ICSE’2023 happened in Melbourne! Great conference, and we had a full day at...',
+          description: "",
+          section: "News",},{id: "news-registration-is-now-open-for-the-1st-international-competition-on-automated-program-repair-check-our-website-https-apr-comp-github-io-for-more-information",
+          title: 'Registration is now open for the 1st International Competition on Automated Program Repair....',
+          description: "",
+          section: "News",},{id: "news-started-my-new-position-as-assistant-professor-at-sutd",
+          title: 'Started my new position as Assistant Professor at SUTD.',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-on-the-program-committee-for-icse-2025-looking-forward-to-many-great-submissions",
+          title: 'I have been invited to serve on the Program Committee for ICSE 2025!...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-evolutionary-testing-for-program-repair-has-been-accepted-for-icst-2024-with-evorepair-we-explore-a-coevolution-approach-that-generates-tests-and-repairs-in-a-unified-workflow-using-evosuite-check-our-preprint",
+          title: 'Our work on “Evolutionary Testing for Program Repair” has been accepted for ICST...',
+          description: "",
+          section: "News",},{id: "news-i-had-fun-participating-in-steamxd-sutd-and-teaching-singapore-s-bright-jc-students-about-basic-principles-in-machine-learning",
+          title: 'I had fun participating in STEAMxD @ SUTD and teaching Singapore’s bright JC...',
+          description: "",
+          section: "News",},{id: "news-happy-to-share-that-our-poster-about-exploring-complexity-estimation-with-symbolic-execution-and-large-language-models-has-been-accepted-for-the-klee-workshop-2024",
+          title: 'Happy to share that our poster about “Exploring Complexity Estimation with Symbolic Execution...',
+          description: "",
+          section: "News",},{id: "news-our-report-about-the-apr-competition-will-be-presented-at-international-workshop-on-automated-program-repair-apr-2024-which-is-co-located-with-icse-2024-check-our-preprint",
+          title: 'Our report about the APR competition will be presented at International Workshop on...',
+          description: "",
+          section: "News",},{id: "news-happy-to-be-the-publicity-co-chair-for-issta-2025-if-you-also-want-to-contribute-here-is-your-chance-issta-is-looking-for-competent-and-motivated-reviewers-for-its-2025-edition-nominate-yourself-deadline-feb-20-using-this-form-https-t-co-baxk2wn1v9",
+          title: 'Happy to be the Publicity Co-Chair for ISSTA 2025!🇳🇴🥳 If you also want...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-timing-side-channel-mitigation-via-automated-program-repair-has-been-accepted-to-be-published-in-tosem-read-the-preprint",
+          title: 'Our work on “Timing Side-Channel Mitigation via Automated Program Repair” has been accepted...',
+          description: "",
+          section: "News",},{id: "news-after-almost-4-years-in-singapore-i-returned-to-germany-and-joined-the-ruhr-university-bochum-as-professor-in-the-faculty-of-computer-science",
+          title: 'After almost 4 years in Singapore 🇸🇬, I returned to Germany 🇩🇪 and...',
+          description: "",
+          section: "News",},{id: "news-our-experience-report-about-the-steamxd-workshop-with-singapore-s-junior-college-students-will-be-presented-at-the-international-conference-on-engineering-and-product-design-education-e-amp-amp-pde-2024-check-our-preprint",
+          title: 'Our experience report about the STEAMxD workshop with Singapore’s Junior College students will...',
+          description: "",
+          section: "News",},{id: "news-happy-to-be-the-proceedings-co-chair-for-ase-2025-looking-forward-to-an-excellent-conference",
+          title: 'Happy to be the Proceedings Co-Chair for ASE 2025! 🇰🇷 🥳 Looking forward...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-vulnerability-repair-via-concolic-execution-and-code-mutations-has-been-accepted-to-be-published-at-tosem-check-our-preprint",
+          title: 'Our work on “Vulnerability Repair via Concolic Execution and Code Mutations” has been...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-on-the-fse-2025-tools-demonstrations-track-program-committee-looking-forward-to-many-great-submissions",
+          title: 'I have been invited to serve on the FSE 2025 Tools Demonstrations track...',
+          description: "",
+          section: "News",},{id: "news-our-experience-report-about-how-to-build-an-intelligent-tutoring-system-as-part-of-a-software-engineering-course-has-been-accepted-at-the-ieee-conference-on-software-engineering-education-and-training-csee-amp-amp-t-2024-which-is-co-located-with-icse-25-check-our-preprint",
+          title: 'Our experience report about how to build an Intelligent Tutoring System as part...',
+          description: "",
+          section: "News",},{id: "news-this-week-i-attended-the-shonan-meeting-217-on-trusted-automatic-programming-it-was-a-great-place-to-be-and-meet-colleagues-and-friends-i-presented-our-ongoing-work-on-developing-ai-based-assistance-in-debugging-education-check-my-slides",
+          title: 'This week I attended the Shonan Meeting 217 on Trusted Automatic Programming! It...',
+          description: "",
+          section: "News",},{id: "news-happy-to-share-that-our-proposal-for-the-international-fuzzing-workshop-fuzzing-2025-has-been-accepted-for-issta-2025-see-you-all-in-trondheim-norway-and-stay-tuned-for-our-cfp",
+          title: 'Happy to share that our proposal for the International Fuzzing Workshop (FUZZING) 2025...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-on-the-program-committee-for-ase-2025-looking-forward-to-many-great-submissions",
+          title: 'I have been invited to serve on the Program Committee for ASE 2025!...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-on-the-program-committee-for-fse-2026-looking-forward-to-many-great-submissions",
+          title: 'I have been invited to serve on the Program Committee for FSE 2026!...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-talk-about-my-postdoctoral-research-experience-in-singapore-as-part-of-the-workshop-and-networking-event-doing-research-in-greater-china-for-stem-early-career-researchers-organized-by-the-china-competence-network-ruhr-niederrhein-c-net-rnr-you-find-my-slides-here",
+          title: 'I have been invited to talk about my (postdoctoral) research experience in Singapore...',
+          description: "",
+          section: "News",},{id: "news-i-have-been-invited-to-serve-as-the-artifact-evaluation-chair-for-fase-2026-looking-forward-to-many-great-research-artifacts",
+          title: 'I have been invited to serve as the Artifact Evaluation Chair for FASE...',
+          description: "",
+          section: "News",},{id: "news-enjoyed-the-fuzzing-25-workshop-with-great-participants-and-keynote-speakers-miryung-kim-ucla-and-amazon-web-services-talked-about-here-research-on-constraining-fuzzing-and-will-wilson-antithesis-provided-interesting-insights-into-career-paths-in-fuzzing-outside-academia-check-our-program-and-watch-the-keynote-recordings",
+          title: 'Enjoyed the FUZZING’25 workshop with great participants and keynote speakers! Miryung Kim (UCLA...',
+          description: "",
+          section: "News",},{id: "news-had-a-great-time-at-the-summer-school-on-security-testing-and-verification-2025-organized-by-the-ku-leuven-and-vub-it-was-great-to-engage-with-the-participants-and-present-our-research-in-fuzzing-for-more-info-check-the-website-or-this-linkedin-post",
+          title: 'Had a great time at the Summer School on Security Testing and Verification...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -459,13 +213,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%79%61%6E%6E%69%63.%6E%6F%6C%6C%65%72@%61%63%6D.%6F%72%67", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
         },
       },{
         id: 'social-linkedin',
