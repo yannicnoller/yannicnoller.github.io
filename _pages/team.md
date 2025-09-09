@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /team/
-title: SQ@RUB
+title: Team
 description: #
 nav: true
 nav_order: 4
