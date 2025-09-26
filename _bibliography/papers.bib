@@ -22,6 +22,17 @@ series = {Koli Calling '25},
 abbr={Koli Calling'25},
 }
 
+@article{diffuzz_risk_ase25,
+  title={Risk Estimation in Differential Fuzzing via Extreme Value Theory}, 
+  author={Rafael Baez and Alejandro Olivas and Nathan K Diamond and Marcelo Frias and Yannic Noller and Saeid Tizpaz-Niari},
+  year={2025},
+  journal={In Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE'25)},
+  bibtex_show={true},
+  abbr={ASE'25},
+  abstract={Differential testing is a highly effective technique for automatically detecting software bugs and vulnerabilities when the specifications are not available, or they involve an analysis over multiple executions simultaneously. Differential fuzzing, in particular, operates as a random process, observing differences in outputs or behaviors between similar inputs to generate the next inputs. However, this process lacks any guarantees on the worst-case outcome: from a differential fuzzing campaign that has observed a certain difference, what is the risk of observing larger differences if we run the fuzzer for one or more steps? This paper investigates the application of Extreme Value Theory (EVT) to address the risk of missing or underestimating differential bugs. The key observation is that differential fuzzing as a random process resembles the maximum distribution of observed differences. Hence, EVT, a branch of statistics dealing with extreme values, is an ideal framework to analyze the tail of the differential fuzzing campaign to contain the risk. We perform experiments on a set of real-world Java libraries and use a differential fuzzing that finds information leaks via side channels in these libraries. We first explore the feasibility of EVT for this task and the optimal hyperparameters for EVT distributions. We then compare EVT-based extrapolation against baseline statistical methods like Markov's and Chebyshev's inequalities, and the Bayes factor. EVT-based extrapolations outperform the baseline techniques in 14.3% of cases, and it ties with the baseline in 64.2% of cases. Finally, we evaluate the accuracy and performance gains of EVT-enabled differential fuzzing in real-world Java libraries, where we reported an average saving for tens of millions of byte-code executions.},
+}
+
+
 @article{simulated_interactive_debugging,
   title={Simulated Interactive Debugging}, 
   author={Yannic Noller and Erick Chandra and Srinidhi HC and Kenny Choo and Cyrille Jegourel and Oka Kurniawan and Christopher M. Poskitt},
