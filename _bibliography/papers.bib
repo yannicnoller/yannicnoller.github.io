@@ -3,28 +3,44 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{diffuzz_risk_ase25,
+@article{testAdaptionForks,
+      title={Towards Automated Test Adaptation in Fork Ecosystems via Large Language Models}, 
+      author={Mukelabai Mukelabai and Wesley Schurkus and Yannic Noller and Thorsten Berger},
+      year={2026},
+      abbr={Preprint'26},
+      pdf={https://www.researchgate.net/profile/Thorsten-Berger-2/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models/links/697b2b925d60ab48356929f0/Towards-Automated-Test-Adaptation-in-Fork-Ecosystems-via-Large-Language-Models.pdf?origin=publicationDetail&_sg%5B0%5D=DdB5rQfI6nRt9KTt8lobLB0g65r-5OAD0QM1GHSJaUhrDZr0tqCgei-8BM6OGDUXnwhtCjG1a9rEvsD-S9KpDw.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_sg%5B1%5D=sfj4bGxpIzWB_4z_9Mqu9YbdfthxefWjl0e0cGgvyUXBNbJNmZMnIGyVIM9HnurVpBB1GYoREe_1eM5hJdsr5g_vHpxMPEsSnFsrDMzHrsI_.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
+      html={https://www.researchgate.net/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models},
+      bibtex_show={true},
+      abstract={Fork-based software ecosystems enable independent evolution, but fragment the quality assurance efforts. Although tests developed in one fork are often relevant to others, direct reuse is rare and can be difficult, due to API drift, refactorings, dependency evolution, or other changes. Prior work has shown that many tests are potentially reusable across forks, yet adapting them remains a largely manual task. This paper explores LLM-assisted test case adaptation as a new direction for automating test propagation in fork ecosystems. We propose a compiler-aware, iterative adaptation technique that integrates tests from one fork into another and leverages large language models (LLMs) to repair incompatibilities revealed by build failures. We report early empirical results on Java fork pairs, showing that LLM guidance can successfully adapt tests in 87.5% of cases where direct reuse fails due to modifications required to the test code itself. Finally, we outline research directions toward soundness-aware, scalable test propagation using foundation models.},
+}
+
+@INPROCEEDINGS{diffuzz_risk_ase25,
+  author={Baez, Rafael and Olivas, Alejandro and Diamond, Nathan K and Frias, Marcelo and Noller, Yannic and Tizpaz-Niari, Saeid},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
   title={Risk Estimation in Differential Fuzzing via Extreme Value Theory}, 
-  author={Rafael Baez and Alejandro Olivas and Nathan K Diamond and Marcelo Frias and Yannic Noller and Saeid Tizpaz-Niari},
   year={2025},
-  journal={In Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE'25)},
+  pages={342-354},
+  doi={10.1109/ASE63991.2025.00036},
   bibtex_show={true},
   abbr={ASE'25},
   abstract={Differential testing is a highly effective technique for automatically detecting software bugs and vulnerabilities when the specifications are not available, or they involve an analysis over multiple executions simultaneously. Differential fuzzing, in particular, operates as a random process, observing differences in outputs or behaviors between similar inputs to generate the next inputs. However, this process lacks any guarantees on the worst-case outcome: from a differential fuzzing campaign that has observed a certain difference, what is the risk of observing larger differences if we run the fuzzer for one or more steps? This paper investigates the application of Extreme Value Theory (EVT) to address the risk of missing or underestimating differential bugs. The key observation is that differential fuzzing as a random process resembles the maximum distribution of observed differences. Hence, EVT, a branch of statistics dealing with extreme values, is an ideal framework to analyze the tail of the differential fuzzing campaign to contain the risk. We perform experiments on a set of real-world Java libraries and use a differential fuzzing that finds information leaks via side channels in these libraries. We first explore the feasibility of EVT for this task and the optimal hyperparameters for EVT distributions. We then compare EVT-based extrapolation against baseline statistical methods like Markov's and Chebyshev's inequalities, and the Bayes factor. EVT-based extrapolations outperform the baseline techniques in 14.3% of cases, and it ties with the baseline in 64.2% of cases. Finally, we evaluate the accuracy and performance gains of EVT-enabled differential fuzzing in real-world Java libraries, where we reported an average saving for tens of millions of byte-code executions.},
-}
+  selected={false},
+  }
 
-@article{simulated_interactive_debugging,
+@INPROCEEDINGS{simulated_interactive_debugging,
+  author={Noller, Yannic and Chandra, Erick and Chandrashekar, Srinidhi and Choo, Kenny and Jegourel, Cyrille and Kurniawan, Oka and Poskitt, Christopher M.},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
   title={Simulated Interactive Debugging}, 
-  author={Yannic Noller and Erick Chandra and Srinidhi HC and Kenny Choo and Cyrille Jegourel and Oka Kurniawan and Christopher M. Poskitt},
   year={2025},
-  journal={In Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE'25)},
+  pages={3896-3901},
+  keywords={Location awareness;Systematics;Large language models;Education;Debugging;Maintenance engineering;Chatbots;Software;Programming profession;Software engineering;Intelligent Tutoring;Debugging;Software Engineering;Education},
+  doi={10.1109/ASE63991.2025.00338},
   pdf={https://arxiv.org/pdf/2501.09694},
-  bibtex_show={true},
-  doi={https://doi.org/10.48550/arXiv.2501.09694},
-  abbr={ASE-NIER'25},
   abstract={Debugging software, i.e., the localization of faults and their repair, is a main activity in software engineering. Therefore, effective and efficient debugging is one of the core skills a software engineer must develop. However, the teaching of debugging techniques is usually very limited or only taught in indirect ways, e.g., during software projects. As a result, most Computer Science (CS) students learn debugging only in an ad-hoc and unstructured way. In this work, we present our approach called Simulated Interactive Debugging that interactively guides students along the debugging process. The guidance aims to empower the students to repair their solutions and have a proper "learning" experience. We envision that such guided debugging techniques can be integrated into programming courses early in the CS education curriculum. To perform an initial evaluation, we developed a prototypical implementation using traditional fault localization techniques and large language models. Students can use features like the automated setting of breakpoints or an interactive chatbot. We designed and executed a controlled experiment that included this IDE-integrated tooling with eight undergraduate CS students. Based on the responses, we conclude that the participants liked the systematic guidance by the assisted debugger. In particular, they rated the automated setting of breakpoints as the most effective, followed by the interactive debugging and chatting, and the explanations for how breakpoints were set. In our future work, we will improve our concept and implementation, add new features, and perform more intensive user studies.},
-  html={https://arxiv.org/abs/2501.09694},
-}
+  abbr={ASE-NIER'25},
+  bibtex_show={true},
+  }
+
 
 @inproceedings{codehinter_koli25,
 author = {Oka Kurniawan and Erick Chandra and Christopher M. Poskitt and Yannic Noller and Kenny T.W. Choo and Cyrille Jegourel},
