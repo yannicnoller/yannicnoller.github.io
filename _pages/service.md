@@ -13,11 +13,13 @@ nav_order: 2
 
 <ul>
 
-<li>Proceedings Co-Chair for the <a href="https://conf.researchr.org/home/ase-2025">IEEE/ACM International Conference on Automated Software Engineering (ASE) 2025</a></li>
-
 <li>Member of the Organizing Committee for the <a href="https://fuzzing-workshop.github.io">Fuzzing Workshop 2026</a></li>
 
 <!--<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a></li>-->
+
+<li>PC member for the <a href="https://conf.researchr.org/track/issta-2026/issta-2026-research-papers">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026</a></li>
+
+<li>PC member for the <a href="https://conf.researchr.org/track/ase-2026/ase-2026-research-track">IEEE/ACM Automated Software Engineering (ASE) conference 2026</a></li>
 
 <li>PC member for the <a href="https://conf.researchr.org/home/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
 
@@ -65,8 +67,8 @@ nav_order: 2
 <ul>
 <li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024, 2026</li>
+<li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022, 2025, and 2026</li>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
-<li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022, 2025</li>
 <li>Poster Track: <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
 <li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a>, <a href="https://conf.researchr.org/track/fse-2025/fse-2025-demonstrations">FSE 2025</a></li>
 </ul>
@@ -117,6 +119,15 @@ nav_order: 2
 <br>
 <h3>Mentoring</h3>
 <ul>
+
+<li>Bachelor Thesis, RUB, 2025, Manhal Jasem, "Assessing the Robustness of Script-Free GUI Testing in Evolving Web Applications"</li>
+
+<li>Bachelor Thesis, RUB, 2025, Keanu-Wesley Schurkus, "Automating Test-Case Adaptation and Integration in Fork Ecosystems Using Large Language Models"</li>
+
+<li>Master Thesis, SUTD, 2025, Abram Tan Jia Han, "DevSide: Intelligent Mentoring System for Software Engineers"</li>
+
+<li>Bachelor Thesis, RUB, 2025, Phil Großcurth, "Enhancing Evolutional Repair with LLM-Based
+Test Oracle Extraction"</li>
 
 <li>Bachelor Thesis, RUB, 2024, Oskar Wilke, "Exploring the Use of Large Language Models and Code Refactoring for Software Variability"</li>
 
