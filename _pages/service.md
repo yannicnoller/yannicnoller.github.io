@@ -15,8 +15,6 @@ nav_order: 2
 
 <li>Member of the Organizing Committee for the <a href="https://fuzzing-workshop.github.io">Fuzzing Workshop 2026</a></li>
 
-<!--<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2025/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2025</a></li>-->
-
 <li>PC member for the <a href="https://conf.researchr.org/track/issta-2026/issta-2026-research-papers">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026</a></li>
 
 <li>PC member for the <a href="https://conf.researchr.org/track/ase-2026/ase-2026-research-track">IEEE/ACM Automated Software Engineering (ASE) conference 2026</a></li>
@@ -24,6 +22,10 @@ nav_order: 2
 <li>PC member for the <a href="https://conf.researchr.org/home/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
 
 <li>Artifact Evaluation Chair for the <a href="https://etaps.org/about/fase/">International Conference on Fundamental Approaches to Software Engineering (FASE) 2026</a></li>
+
+<!--<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2026</a></li>-->
+
+<li>PC member for the <a href="https://conf.researchr.org/track/icse-2027/icse-2027-research-track">IEEE/ACM International Conference on Software Engineering (ICSE) 2027</a></li>
 
 </ul>
 
@@ -65,10 +67,10 @@ nav_order: 2
 <br>
 <h3>Conference Committees</h3>
 <ul>
+<li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025, 2027</li>
 <li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024, 2026</li>
 <li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022, 2025, and 2026</li>
-<li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025</li>
 <li>Poster Track: <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
 <li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a>, <a href="https://conf.researchr.org/track/fse-2025/fse-2025-demonstrations">FSE 2025</a></li>
 </ul>
@@ -89,25 +91,6 @@ nav_order: 2
 </ul>
 
 <br>
-<h3>Artifact Reviewing</h3>
-<a href="https://ifm22.si.usi.ch">iFM 2022</a>,
-<a href="https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation#Call-for-Artifacts">ISSTA'2021</a>,
-<a href="https://conf.researchr.org/track/issta-2020/issta-2020-artifact-evaluation#Call-for-Artifacts">ISSTA'2020</a>,
-<a href="https://popl20.sigplan.org/home/VMCAI-2020#Call-for-Artifacts">VMCAI'2020</a>
-
-<br>
-<h3>Subreviewing</h3>
-<a href="https://etaps.org/2021/esop">ESOP 2021</a>,
-<a href="https://conf.researchr.org/home/icse-2020">ICSE'2020</a>,
-<a href="https://fmcad.forsyte.at/FMCAD20/">FMCAD'2020</a>,
-<a href="https://conf.researchr.org/track/etaps-2019/tacas-2019-papers">TACAS'2019</a>,
-<a href="https://www.es.mdh.se/icst2018/">ICST'2018</a>,
-<a href="https://icse2017.gatech.edu">ICSE'2017</a>,
-<a href="http://ase-conferences.org/ase/past/ase2017/">ASE'2017</a>,
-<a href="http://ase-conferences.org/ase/past/ase2016/research.larc.smu.edu.sg/ase2016/home.html">ASE'2016</a>
-
-
-<br>
 <h3>Supervision of Researchers in Early Career Phases</h3>
 <ul>
 
@@ -117,7 +100,7 @@ nav_order: 2
 </ul>
 
 <br>
-<h3>Mentoring</h3>
+<h3>Mentoring / Thesis Supervision</h3>
 <ul>
 
 <li>Bachelor Thesis, RUB, 2025, Manhal Jasem, "Assessing the Robustness of Script-Free GUI Testing in Evolving Web Applications"</li>
@@ -160,6 +143,24 @@ generation and self-repair ability"</li>
 <br>
 <h3>Others</h3>
 <ul>
+
+<li>Artifact Reviewing:
+<a href="https://ifm22.si.usi.ch">iFM 2022</a>,
+<a href="https://conf.researchr.org/track/issta-2021/issta-2021-artifact-evaluation#Call-for-Artifacts">ISSTA'2021</a>,
+<a href="https://conf.researchr.org/track/issta-2020/issta-2020-artifact-evaluation#Call-for-Artifacts">ISSTA'2020</a>,
+<a href="https://popl20.sigplan.org/home/VMCAI-2020#Call-for-Artifacts">VMCAI'2020</a>
+</li>
+
+<li>Subreviewing:
+<a href="https://etaps.org/2021/esop">ESOP 2021</a>,
+<a href="https://conf.researchr.org/home/icse-2020">ICSE'2020</a>,
+<a href="https://fmcad.forsyte.at/FMCAD20/">FMCAD'2020</a>,
+<a href="https://conf.researchr.org/track/etaps-2019/tacas-2019-papers">TACAS'2019</a>,
+<a href="https://www.es.mdh.se/icst2018/">ICST'2018</a>,
+<a href="https://icse2017.gatech.edu">ICSE'2017</a>,
+<a href="http://ase-conferences.org/ase/past/ase2017/">ASE'2017</a>,
+<a href="http://ase-conferences.org/ase/past/ase2016/research.larc.smu.edu.sg/ase2016/home.html">ASE'2016</a>
+</li>
 
 <li>Shadow PC member for the IEEE Symposium on Security and Privacy (<a href="https://www.ieee-security.org/TC/SP2021/shadowpc.html">S&P</a>) in 2021</li>
 
