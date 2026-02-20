@@ -3,6 +3,21 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{ahlers2026killfireleveraginglatent,
+      title={Kill it with FIRE: On Leveraging Latent Space Directions for Runtime Backdoor Mitigation in Deep Neural Networks}, 
+      author={Enrico Ahlers and Daniel Passon and Yannic Noller and Lars Grunske},
+      year={2026},
+      eprint={2602.10780},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2602.10780},
+      pdf={https://arxiv.org/pdf/2602.10780},
+      abstract={Machine learning models are increasingly present in our everyday lives; as a result, they become targets of adversarial attackers seeking to manipulate the systems we interact with. A well-known vulnerability is a backdoor introduced into a neural network by poisoned training data or a malicious training process. Backdoors can be used to induce unwanted behavior by including a certain trigger in the input. Existing mitigations filter training data, modify the model, or perform expensive input modifications on samples. If a vulnerable model has already been deployed, however, those strategies are either ineffective or inefficient. To address this gap, we propose our inference-time backdoor mitigation approach called FIRE (Feature-space Inference-time REpair). We hypothesize that a trigger induces structured and repeatable changes in the model's internal representation. We view the trigger as directions in the latent spaces between layers that can be applied in reverse to correct the inference mechanism. Therefore, we turn the backdoored model against itself by manipulating its latent representations and moving a poisoned sample's features along the backdoor directions to neutralize the trigger. Our evaluation shows that FIRE has low computational overhead and outperforms current runtime mitigations on image benchmarks across various attacks, datasets, and network architectures.},
+      abbr={arXiv'26},
+      journal={arXiv preprint arXiv:2602.10780},
+      bibtex_show={true},
+}
+
 @article{chur2026autonomytakescontrolsoftware,
       title={Before Autonomy Takes Control: Software Testing in Robotics}, 
       author={Nils Chur and Thiago Santos de Moura and Argentina Ortega and Sven Peldszus and Thorsten Berger and Nico Hochgeschwender and Yannic Noller},
@@ -12,7 +27,6 @@
       primaryClass={cs.SE},
       url={https://arxiv.org/abs/2602.02293},
       pdf={https://arxiv.org/pdf/2602.02293},
-      html={https://arxiv.org/abs/2602.02293},
       abstract={Robotic systems are complex and safety-critical software systems. As such, they need to be tested thoroughly. Unfortunately, robot software is intrinsically hard to test compared to traditional software, mainly since the software needs to closely interact with hardware, account for uncertainty in its operational environment, handle disturbances, and act highly autonomously. However, given the large space in which robots operate, anticipating possible failures when designing tests is challenging. This paper presents a mapping study by considering robotics testing papers and relating them to the software testing theory. We consider 247 robotics testing papers and map them to software testing, discussing the state-of-the-art software testing in robotics with an illustrated example, and discuss current challenges. Forming the basis to introduce both the robotics and software engineering communities to software testing challenges. Finally, we identify open questions and lessons learned.},
       abbr={arXiv'26},
       journal={arXiv preprint arXiv:2602.02293},
@@ -25,7 +39,6 @@
       year={2026},
       abbr={Preprint'26},
       pdf={https://www.researchgate.net/profile/Thorsten-Berger-2/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models/links/697b2b925d60ab48356929f0/Towards-Automated-Test-Adaptation-in-Fork-Ecosystems-via-Large-Language-Models.pdf?origin=publicationDetail&_sg%5B0%5D=DdB5rQfI6nRt9KTt8lobLB0g65r-5OAD0QM1GHSJaUhrDZr0tqCgei-8BM6OGDUXnwhtCjG1a9rEvsD-S9KpDw.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_sg%5B1%5D=sfj4bGxpIzWB_4z_9Mqu9YbdfthxefWjl0e0cGgvyUXBNbJNmZMnIGyVIM9HnurVpBB1GYoREe_1eM5hJdsr5g_vHpxMPEsSnFsrDMzHrsI_.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
-      html={https://www.researchgate.net/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models},
       bibtex_show={true},
       abstract={Fork-based software ecosystems enable independent evolution, but fragment the quality assurance efforts. Although tests developed in one fork are often relevant to others, direct reuse is rare and can be difficult, due to API drift, refactorings, dependency evolution, or other changes. Prior work has shown that many tests are potentially reusable across forks, yet adapting them remains a largely manual task. This paper explores LLM-assisted test case adaptation as a new direction for automating test propagation in fork ecosystems. We propose a compiler-aware, iterative adaptation technique that integrates tests from one fork into another and leverages large language models (LLMs) to repair incompatibilities revealed by build failures. We report early empirical results on Java fork pairs, showing that LLM guidance can successfully adapt tests in 87.5% of cases where direct reuse fails due to modifications required to the test code itself. Finally, we outline research directions toward soundness-aware, scalable test propagation using foundation models.},
 }
