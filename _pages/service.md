@@ -13,19 +13,15 @@ nav_order: 2
 
 <ul>
 
-<li>Member of the Organizing Committee for the <a href="https://fuzzing-workshop.github.io">Fuzzing Workshop 2026</a></li>
-
 <li>PC member for the <a href="https://conf.researchr.org/track/issta-2026/issta-2026-research-papers">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026</a></li>
 
 <li>PC member for the <a href="https://conf.researchr.org/track/ase-2026/ase-2026-research-track">IEEE/ACM Automated Software Engineering (ASE) conference 2026</a></li>
 
-<li>PC member for the <a href="https://conf.researchr.org/home/fse-2026">ACM International Conference on the Foundations of Software Engineering (FSE) 2026</a></li>
-
-<li>Artifact Evaluation Chair for the <a href="https://etaps.org/about/fase/">International Conference on Fundamental Approaches to Software Engineering (FASE) 2026</a></li>
-
-<!--<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2026</a></li>-->
+<li>Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a> at <a href="https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg">Google Summer of Code (GSoC) 2026</a></li>
 
 <li>PC member for the <a href="https://conf.researchr.org/track/icse-2027/icse-2027-research-track">IEEE/ACM International Conference on Software Engineering (ICSE) 2027</a></li>
+
+<li>PC member for the ACM International Conference on the Foundations of Software Engineering (FSE) 2027</li>
 
 </ul>
 
@@ -54,7 +50,7 @@ nav_order: 2
 
 <li><a href="https://fuzzing-workshop.github.io/">International Fuzzing Workshop</a> (Organizing Committee) in <a href="https://fuzzing-workshop.github.io/editions/2023/">2023</a>, <a href="https://fuzzing-workshop.github.io/editions/2024/">2024</a>, <a href="https://fuzzing-workshop.github.io/editions/2025">2025</a>, and <a href="https://fuzzing-workshop.github.io/editions/2026">2026</a></li>
 <li> <a href="https://etaps.org/about/fase/">FASE 2026</a> (Artifact Evaluation Chair)</li>
-<li><a href="https://summerofcode.withgoogle.com/">Google Summer of Code (GSoC)</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>) in 2021, 2022, 2024, and 2025</li>
+<li><a href="https://summerofcode.withgoogle.com/">Google Summer of Code (GSoC)</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>) in 2021, 2022, 2024-2026</li>
 <li><a href="https://conf.researchr.org/home/ase-2025">ASE 2025</a> (Proceedings Co-Chair)</li>
 <li><a href="https://conf.researchr.org/home/issta-2025">ISSTA 2025</a> (Publicity Co-Chair)</li>
 <li><a href="https://2022.esec-fse.org">ESEC/FSE 2022</a> (Local Organization Co-Chair)</li>
@@ -68,9 +64,9 @@ nav_order: 2
 <h3>Conference Committees</h3>
 <ul>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025, 2027</li>
-<li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026</li>
+<li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026-2027</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024, 2026</li>
-<li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022, 2025, and 2026</li>
+<li>Technical Track, International Conference on Automated Software Engineering (ASE) 2022, 2025-2026</li>
 <li>Poster Track: <a href="https://conf.researchr.org/home/icse-2022">ICSE 2022</a>, <a href="https://2024.esec-fse.org/track/fse-2024-posters">FSE 2024</a></li>
 <li>Tool Demonstrations Track: <a href="https://2024.issta.org/track/issta-ecoop-2024-tool-demonstrations#program">ISSTA 2024</a>, <a href="https://conf.researchr.org/track/fse-2025/fse-2025-demonstrations">FSE 2025</a></li>
 </ul>
@@ -100,8 +96,10 @@ nav_order: 2
 </ul>
 
 <br>
-<h3>Mentoring / Thesis Supervision</h3>
+<h3>Mentoring</h3>
 <ul>
+
+<!--
 
 <li>Bachelor Thesis, RUB, 2025, Manhal Jasem, "Assessing the Robustness of Script-Free GUI Testing in Evolving Web Applications"</li>
 
@@ -125,6 +123,8 @@ generation and self-repair ability"</li>
 
 <li>Final Year Project (FYP), NUS, 2022, Jon Chua, "Design of Intelligent Tutoring Systems for Programming Education (feedback computation)"</li>
 
+-->
+
 <li><a href="https://summerofcode.withgoogle.com/">Google Summer of Code (GSoC) 2022</a> Mentor for "<a href="https://summerofcode.withgoogle.com/programs/2022/projects/NQhh53gZ">Add Gradle support for SymbolicPathFinder</a>"</li>
 
 <li><a href="https://summerofcode.withgoogle.com/archive/2021/organizations/5712237452328960">Google Summer of Code (GSoC) 2021</a> Mentor for "<a href="https://summerofcode.withgoogle.com/archive/2021/projects/6544381091250176">Improved Integration of String Solvers in SPF</a>"</li>
@@ -135,9 +135,14 @@ generation and self-repair ability"</li>
 
 <li><a href="https://summerofcode.withgoogle.com/archive/2019/organizations/4859784585543680">Google Summer of Code (GSoC) 2019</a> Mentor for "<a href="https://summerofcode.withgoogle.com/archive/2019/projects/5249874335891456/">Checking Assertions with Symbolic Pathfinder</a>"</li>
 
+<!--
+
 <li>Master Thesis, HU Berlin, 2019, <a href="https://www.informatik.hu-berlin.de/en/Members/minxing-tang">Minxing Tang</a>, "Automated Generation of Crash-triggering Paths with Symbolic Execution"</li>
 
 <li>Bachelor Thesis, HU Berlin, 2017, <a href="https://www.informatik.hu-berlin.de/en/Members/hoang-lam-nguyen">Hoang Lam Nguyen</a>, "Automated Test Case Generation with Symbolic Execution for Regression Testing"</li>
+
+-->
+
 </ul>
 
 <br>

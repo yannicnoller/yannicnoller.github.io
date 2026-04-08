@@ -16,6 +16,7 @@
       abbr={arXiv'26},
       journal={arXiv preprint arXiv:2602.10780},
       bibtex_show={true},
+      selected={false},
 }
 
 @article{chur2026autonomytakescontrolsoftware,
@@ -31,16 +32,21 @@
       abbr={arXiv'26},
       journal={arXiv preprint arXiv:2602.02293},
       bibtex_show={true},
+      selected={false},
 }
 
-@article{testAdaptionForks,
-      title={Towards Automated Test Adaptation in Fork Ecosystems via Large Language Models}, 
-      author={Mukelabai Mukelabai and Wesley Schurkus and Yannic Noller and Thorsten Berger},
-      year={2026},
-      abbr={Preprint'26},
-      pdf={https://www.researchgate.net/profile/Thorsten-Berger-2/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models/links/697b2b925d60ab48356929f0/Towards-Automated-Test-Adaptation-in-Fork-Ecosystems-via-Large-Language-Models.pdf?origin=publicationDetail&_sg%5B0%5D=DdB5rQfI6nRt9KTt8lobLB0g65r-5OAD0QM1GHSJaUhrDZr0tqCgei-8BM6OGDUXnwhtCjG1a9rEvsD-S9KpDw.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_sg%5B1%5D=sfj4bGxpIzWB_4z_9Mqu9YbdfthxefWjl0e0cGgvyUXBNbJNmZMnIGyVIM9HnurVpBB1GYoREe_1eM5hJdsr5g_vHpxMPEsSnFsrDMzHrsI_.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
-      bibtex_show={true},
-      abstract={Fork-based software ecosystems enable independent evolution, but fragment the quality assurance efforts. Although tests developed in one fork are often relevant to others, direct reuse is rare and can be difficult, due to API drift, refactorings, dependency evolution, or other changes. Prior work has shown that many tests are potentially reusable across forks, yet adapting them remains a largely manual task. This paper explores LLM-assisted test case adaptation as a new direction for automating test propagation in fork ecosystems. We propose a compiler-aware, iterative adaptation technique that integrates tests from one fork into another and leverages large language models (LLMs) to repair incompatibilities revealed by build failures. We report early empirical results on Java fork pairs, showing that LLM guidance can successfully adapt tests in 87.5% of cases where direct reuse fails due to modifications required to the test code itself. Finally, we outline research directions toward soundness-aware, scalable test propagation using foundation models.},
+@inproceedings{testAdaptionForks,
+author={Mukelabai Mukelabai and Wesley Schurkus and Yannic Noller and Thorsten Berger},
+title={Towards Automated Test Adaptation in Fork Ecosystems via Large Language Models}, 
+year = {2026},
+publisher = {Association for Computing Machinery},
+abstract={Fork-based software ecosystems enable independent evolution, but fragment the quality assurance efforts. Although tests developed in one fork are often relevant to others, direct reuse is rare and can be difficult, due to API drift, refactorings, dependency evolution, or other changes. Prior work has shown that many tests are potentially reusable across forks, yet adapting them remains a largely manual task. This paper explores LLM-assisted test case adaptation as a new direction for automating test propagation in fork ecosystems. We propose a compiler-aware, iterative adaptation technique that integrates tests from one fork into another and leverages large language models (LLMs) to repair incompatibilities revealed by build failures. We report early empirical results on Java fork pairs, showing that LLM guidance can successfully adapt tests in 87.5% of cases where direct reuse fails due to modifications required to the test code itself. Finally, we outline research directions toward soundness-aware, scalable test propagation using foundation models.},
+booktitle = {Proceedings of the 34rd ACM International Conference on the Foundations of Software Engineering},
+series = {FSE Companion '26},
+abbr={FSE-IVR'26},
+pdf={https://www.researchgate.net/profile/Thorsten-Berger-2/publication/400205734_Towards_Automated_Test_Adaptation_in_Fork_Ecosystems_via_Large_Language_Models/links/697b2b925d60ab48356929f0/Towards-Automated-Test-Adaptation-in-Fork-Ecosystems-via-Large-Language-Models.pdf?origin=publicationDetail&_sg%5B0%5D=DdB5rQfI6nRt9KTt8lobLB0g65r-5OAD0QM1GHSJaUhrDZr0tqCgei-8BM6OGDUXnwhtCjG1a9rEvsD-S9KpDw.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_sg%5B1%5D=sfj4bGxpIzWB_4z_9Mqu9YbdfthxefWjl0e0cGgvyUXBNbJNmZMnIGyVIM9HnurVpBB1GYoREe_1eM5hJdsr5g_vHpxMPEsSnFsrDMzHrsI_.AbGMZ4_x1KuMjhaaII96p8DAnBGbA5IzZf0Yc2n6k6GCJF648lgASCBF5tzbLX6z08XD8CIzh1oH6rxfFFxNQA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
+bibtex_show={true},
+selected={false},
 }
 
 @INPROCEEDINGS{diffuzz_risk_ase25,
@@ -69,6 +75,7 @@
   abstract={Debugging software, i.e., the localization of faults and their repair, is a main activity in software engineering. Therefore, effective and efficient debugging is one of the core skills a software engineer must develop. However, the teaching of debugging techniques is usually very limited or only taught in indirect ways, e.g., during software projects. As a result, most Computer Science (CS) students learn debugging only in an ad-hoc and unstructured way. In this work, we present our approach called Simulated Interactive Debugging that interactively guides students along the debugging process. The guidance aims to empower the students to repair their solutions and have a proper "learning" experience. We envision that such guided debugging techniques can be integrated into programming courses early in the CS education curriculum. To perform an initial evaluation, we developed a prototypical implementation using traditional fault localization techniques and large language models. Students can use features like the automated setting of breakpoints or an interactive chatbot. We designed and executed a controlled experiment that included this IDE-integrated tooling with eight undergraduate CS students. Based on the responses, we conclude that the participants liked the systematic guidance by the assisted debugger. In particular, they rated the automated setting of breakpoints as the most effective, followed by the interactive debugging and chatting, and the explanations for how breakpoints were set. In our future work, we will improve our concept and implementation, add new features, and perform more intensive user studies.},
   abbr={ASE-NIER'25},
   bibtex_show={true},
+  selected={true},
   }
 
 @inproceedings{codehinter_koli25,
@@ -91,7 +98,7 @@ series = {Koli Calling '25},
 pdf={https://arxiv.org/pdf/2509.21067},
 abbr={Koli Calling'25},
 bibtex_show={true},
-selected={false},
+selected={true},
 }
 
 @Article{emse25_shiftleftfuzzing,
@@ -110,7 +117,7 @@ selected={false},
   url={https://doi.org/10.1007/s10664-025-10702-5},
   html={https://doi.org/10.1007/s10664-025-10702-5},
   abbr={EMSE'25},
-  selected={false},
+  selected={true},
   bibtex_show={true},
   pdf={emse2025_fuzzing_left_preprint.pdf},
 }
@@ -129,6 +136,7 @@ selected={false},
       journal={arXiv preprint arXiv:2506.08171},
       bibtex_show={true},
       abstract={Large language models (LLMs) have been successfully applied to a variety of coding tasks, including code generation, completion, and repair. However, more complex symbolic reasoning tasks remain largely unexplored by LLMs. This paper investigates the capacity of LLMs to reason about worst-case executions in programs through symbolic constraints analysis, aiming to connect LLMs and symbolic reasoning approaches. Specifically, we define and address the problem of worst-case symbolic constraints analysis as a measure to assess the comprehension of LLMs. We evaluate the performance of existing LLMs on this novel task and further improve their capabilities through symbolic reasoning-guided fine-tuning, grounded in SMT (Satisfiability Modulo Theories) constraint solving and supported by a specially designed dataset of symbolic constraints. Experimental results show that our solver-aligned model, WARP-1.0-3B, consistently surpasses size-matched and even much larger baselines, demonstrating that a 3B LLM can recover the very constraints that pin down an algorithm's worst-case behaviour through reinforcement learning methods. These findings suggest that LLMs are capable of engaging in deeper symbolic reasoning, supporting a closer integration between neural network-based learning and formal methods for rigorous program analysis.},
+      selected={false},
 }
 
 @article{campos2025empiricalevaluationgeneralizableautomated,
@@ -145,6 +153,7 @@ selected={false},
       html={https://arxiv.org/abs/2506.03283},
       bibtex_show={true},
       abstract={Automated Program Repair (APR) proposes bug fixes to aid developers in maintaining software. The state of the art in this domain focuses on using LLMs, leveraging their strong capabilities to comprehend specifications in natural language and to generate program code. Recent works have shown that LLMs can be used to generate repairs. However, despite the APR community's research achievements and several industry deployments in the last decade, APR still lacks the capabilities to generalize broadly. In this work, we present an intensive empirical evaluation of LLMs for generating patches. We evaluate a diverse set of 13 recent models, including open ones (e.g., Llama 3.3, Qwen 2.5 Coder, and DeepSeek R1 (dist.)) and closed ones (e.g., o3-mini, GPT-4o, Claude 3.7 Sonnet, Gemini 2.0 Flash). In particular, we explore language-agnostic repairs by utilizing benchmarks for Java (e.g., Defects4J), JavaScript (e.g., BugsJS), Python (e.g., BugsInPy), and PHP (e.g., BugsPHP). Besides the generalization between different languages and levels of patch complexity, we also investigate the effects of fault localization (FL) as a preprocessing step and compare the progress for open vs closed models. Our evaluation represents a snapshot of the current repair capabilities of the latest LLMs. Key results include: (1) Different LLMs tend to perform best for different languages, which makes it hard to develop cross-platform repair techniques with single LLMs. (2) The combinations of models add value with respect to uniquely fixed bugs, so a committee of expert models should be considered. (3) Under realistic assumptions of imperfect FL, we observe significant drops in accuracy from the usual practice of using perfect FL. Our findings and insights will help both researchers and practitioners develop reliable and generalizable APR techniques and evaluate them in realistic and fair environments.},
+      selected={false},
 }
 
 @INPROCEEDINGS{cseet25_its,
@@ -153,7 +162,7 @@ selected={false},
   booktitle={37th IEEE Conference on Software Engineering Education and Training (CSEE&T 2025), co-located with ICSE 2025.}, 
   year={2025},
   abbr={CSEE&T'25},
-  selected={true},
+  selected={false},
   abstract={The growing number of students enrolling in Computer Science (CS) programmes is pushing CS educators to their limits. This poses significant challenges to computing education, particularly the teaching of introductory programming and advanced software engineering (SE) courses. First-year programming courses often face overwhelming enrollments, including interdisciplinary students who are not CS majors. The high teacher-to-student ratio makes it challenging to provide timely and high-quality feedback. Meanwhile, software engineering education comes with inherent difficulties like acquiring industry partners and the dilemma that such software projects are often under or over-specified and one-time efforts within one team or one course. To address these challenges, we designed a novel foundational SE course. This SE course envisions building a full-fledged Intelligent Tutoring System (ITS) of Programming Assignments to provide automated, real-time feedback for novice students in programming courses over multiple years. Each year, SE students contribute to specific short-running SE projects that improve the existing ITS implementation, while at the same time, we can deploy the ITS for usage by students for learning programming. This project setup builds awareness among SE students about their contribution to a ``to–be–deployed" software project. In this multi-year teaching effort, we have incrementally built an ITS that is now deployed in various programming courses. This paper discusses the Intelligent Tutoring System architecture, our teaching concept in the SE course, our experience with the built ITS, and our view of future computing education.},
   pdf={cseet2025_its_preprint.pdf},
 }
@@ -168,7 +177,7 @@ selected={false},
   abstract = {Security vulnerabilities detected via techniques like greybox fuzzing are often fixed with a significant time lag. This increases the exposure of the software to vulnerabilities. Automated fixing of vulnerabilities where a tool can generate fix suggestions is thus of value. In this work, we present such a tool, called CrashRepair, to automatically generate fix suggestions using concolic execution, specification inference, and search techniques. Our approach avoids generating fix suggestions merely at the crash location because such fixes often disable the manifestation of the error instead of fixing the error. Instead, based on sanitizer-guided concolic execution, we infer desired constraints at specific program locations and then opportunistically search for code mutations that help respect those constraints. Our technique only requires a single detected vulnerability or exploit as input; it does not require any user-provided properties. Evaluation results on a wide variety of CVEs in the VulnLoc benchmark, show CrashRepair achieves greater efficacy than state-of-the-art vulnerability repair tools like Senx. The repairs suggested come in the form of a ranked set of patches at different locations, and we show that on most occasions, the desired fix is among the top-3 fixes reported by CrashRepair.},
   pdf={tosem2025_crashrepair.pdf},
   abbr={TOSEM'25},
-  selected={true},
+  selected={false},
   bibtex_show={true},
 }
 
@@ -181,6 +190,7 @@ selected={false},
   abbr={E&PDE'24},
   pdf={2024_epde_steamxd.pdf},
   abstract={In this work, we apply the Singapore University of Technology and Design (SUTD)’s STEAM x D (STEAM = Science, Technology, Engineering, Arts and Mathematics, and D = Design Thinking) transdisciplinary collaborative principles to a different set of disciplines (i.e. Humanities, Artificial Intelligence, 3D printing, etc.), in a workshop which was carried out for a total of 46 participating high school students (17-18-years old) in which about 40% were female students. In this 5-day workshop the students worked in teams of 4 to 5 students along 8 SUTD instructors from different disciplines, and 10 SUTD undergraduate helpers, to solve a design challenge using a systems approach complemented with human-centric, design thinking, and engineering elements as part of our daVinci@SUTD immersion programme, which seeks to inspire youth in human-centered design and innovation that are grounded in STEM education fused with the understanding of Humanities, Arts, and Social Sciences to serve greater societal needs. In general, survey feedback showed high levels of student engagement, awareness of using Artificial Intelligence, engineering, and design thinking to address real-life problems, and overall, the students found the workshop useful and insightful.},
+  selected={false},
 }
 
 @article{tosem24_pendulum,
@@ -206,6 +216,7 @@ selected={false},
   html={https://dl.acm.org/doi/10.1145/3678169},
   supp={https://doi.org/10.6084/m9.figshare.20731846},
   bibtex_show={true},
+  selected={false},
 }
 
 @article{kim2024codexity,
@@ -256,7 +267,7 @@ selected={false},
   volume={},
   number={},
   pages={105-116},
-  selected={true},
+  selected={false},
   abstract={Automated program repair (APR) allows for autonomous software protection and improvement. Many proposed repair techniques rely on available test suites, since tests are available in real-world settings. Tests are incomplete specifications, however. As a result, repairs generated based on tests may suffer from the test overfitting problem. The patches produced by APR techniques may pass the given tests and thus be plausible, and yet be an incorrect patch. This hints towards more extensive test suites to guide program repair. 
 
 Generating additional tests to improve the test suite quality is generally difficult because the oracle or expected observable behavior of the generated tests is unknown. In our work, we first construct additional oracles by instrumenting buggy programs from the Defects4J benchmark with the knowledge obtained from the available bug reports. Then, we formulate a coevolution approach that generates tests and repairs in a unified workflow.
