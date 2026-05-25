@@ -48,6 +48,7 @@ nav_order: 2
 <ul>
 
 
+<li><a href="https://conf.researchr.org/home/fse-2027">FSE 2027</a> (Tutorials Co-Chair)</li>
 <li><a href="https://fuzzing-workshop.github.io/">International Fuzzing Workshop</a> (Organizing Committee) in <a href="https://fuzzing-workshop.github.io/editions/2023/">2023</a>, <a href="https://fuzzing-workshop.github.io/editions/2024/">2024</a>, <a href="https://fuzzing-workshop.github.io/editions/2025">2025</a>, and <a href="https://fuzzing-workshop.github.io/editions/2026">2026</a></li>
 <li> <a href="https://etaps.org/about/fase/">FASE 2026</a> (Artifact Evaluation Chair)</li>
 <li><a href="https://summerofcode.withgoogle.com/">Google Summer of Code (GSoC)</a> (Organization Administrator for <a href="https://github.com/javapathfinder/jpf-core/wiki">Java PathFinder</a>) in 2021, 2022, 2024-2026</li>
