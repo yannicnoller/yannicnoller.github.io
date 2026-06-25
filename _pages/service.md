@@ -13,6 +13,8 @@ nav_order: 2
 
 <ul>
 
+<li>PC member for the <a href="https://2027.sigcse-ts.acm.org">ACM SIGCSE Technical Symposium on Computer Science Education (SIGCSE TS) 2027</a></li>
+
 <li>PC member for the <a href="https://conf.researchr.org/track/issta-2026/issta-2026-research-papers">ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026</a></li>
 
 <li>PC member for the <a href="https://conf.researchr.org/track/ase-2026/ase-2026-research-track">IEEE/ACM Automated Software Engineering (ASE) conference 2026</a></li>
@@ -64,6 +66,7 @@ nav_order: 2
 <br>
 <h3>Conference Committees</h3>
 <ul>
+<li>Research Track, SIGCSE Technical Symposium on Computer Science Education (SIGCSE TS) 2027</li>
 <li>Technical Track, International Conference of Software Engineering (ICSE) 2023-2025, 2027</li>
 <li>Technical Track, International Conference on the Foundations of Software Engineering (FSE) 2026-2027</li>
 <li>Technical Track, International Symposium on Software Testing and Analysis (ISSTA) 2022-2024, 2026</li>
