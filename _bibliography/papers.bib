@@ -3,6 +3,19 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{riskfuzzing_icse27,
+  author = {Kamballa, Srivatsa and Huang, Kaiming and Shevade, Rahul R and Noller, Yannic and Tan, Gang and Tizpaz-Niari, Saeid},
+  title = {A Bayesian Approach to Estimating Residual Risk of Fuzzing},
+  year = {2027},
+  publisher = {ACM},
+  abstract = {Fuzzing is a key technique to find bugs in software infrastructure. Greybox fuzzers use lightweight coverage feedback to grow a seed corpus adaptively: each input that exercises a new program path is retained for further mutation, so the probability of discovering new coverage changes as the campaign progresses. Like any dynamic analysis, however, fuzzing cannot provide assurance on the absence of defects in paths not covered during testing. To tackle this problem, prior works estimate the residual risk of fuzzing: the probability that a bug would still be discovered if fuzzing continued. Prior mean-local estimators already account for adaptive bias by weighting per-seed discovery probability estimates according to the fuzzer's seed-selection schedule---an important step beyond global statistics. However, they summarize each seed with a single point estimate derived from local incidence frequencies, without encoding how much evidence backs that estimate. A barely-fuzzed seed and a heavily-fuzzed seed receive the same local smoothing. We observe that each seed's mutation process forms a sequence of independent Bernoulli trials with an unknown seed-specific probability ps, estimable from its own failure--success history via a conjugate Beta posterior. Maintaining a Beta posterior per seed means evidence accumulates across discovery rounds, and each seed's influence on the corpus-level estimate is naturally proportional to the observations accumulated about it. We introduce PSBayes, a Per-Seed Bayesian model that maintains a separate Beta posterior for every seed across all discovery rounds, and derive two estimators: PSBayes99 (Bayes Factor) and PSBayesPM (Posterior Mean). Evaluated across eight real-world FuzzBench benchmarks, PSBayes99 achieves the lowest weighted accuracy error (∼24 points better than the baselines), mean overestimation under one second per round, and the lowest expected underestimation cost in the cohort. PSBayesPM drives underestimation to near zero (0.04%) for safety-critical deployments where premature termination is unacceptable.},
+  booktitle = {Proceedings of the 49th International Conference on Software Engineering},
+  location = {Dublin, Ireland},
+  series = {ICSE '27},
+  selected={false},
+  abbr={ICSE'27},
+}
+
 @article{demoura2026newerbiggersafer,
       title={Newer and Bigger, but Safer? A Longitudinal Study of the Functionality-Security Gap in LLM-Generated Code}, 
       author={Thiago Santos de Moura and Fynn Matuschek and Flavio Toffalini and Yannic Noller},
